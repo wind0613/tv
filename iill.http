@@ -1,0 +1,7 @@
+
+GET https://live.iill.top/douyu/5040227
+User-Agent: Apifox/1.0.0 (https://apifox.com)
+Accept: */*
+Host: live.iill.top
+Accept-Encoding: gzip, deflate, br
+Content-Type: text/plain

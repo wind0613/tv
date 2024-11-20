@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV</title>
+    <!-- 引入 Element UI 的 CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入自定义 CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+    <h1>MY IPTV</h1>
+    <div class="container" id="channelContainer"></div>
+
+    <!-- 使用 Element UI 的模态框 -->
+    <el-dialog
+            title="频道信息"
+            :visible.sync="dialogVisible"
+            width="600px">
+        <el-form :model="form">
+            <el-form-item label="ID">
+                <el-input v-model="form.id" readonly></el-input>
+            </el-form-item>
+            <el-form-item label="Tvg ID">
+                <el-input v-model="form.tvgId"></el-input>
+            </el-form-item>
+            <el-form-item label="Tvg Name">
+                <el-input v-model="form.tvgName"></el-input>
+            </el-form-item>
+            <el-form-item label="Tvg Logo">
+                <el-input v-model="form.tvgLogo"></el-input>
+            </el-form-item>
+            <el-form-item label="Group Title">
+                <el-autocomplete
+                        v-model="form.groupTitle"
+                        :fetch-suggestions="querySearch"
+                        placeholder="请选择或输入">
+                </el-autocomplete>
+            </el-form-item>
+            <el-form-item label="Title">
+                <el-input v-model="form.title"></el-input>
+            </el-form-item>
+            <el-form-item label="URL">
+                <el-input v-model="form.url"></el-input>
+            </el-form-item>
+        </el-form>
+        <div slot="footer" class="dialog-footer">
+            <el-button @click="dialogVisible = false">关闭</el-button>
+            <el-button type="primary" @click="handleEdit">修改</el-button>
+        </div>
+    </el-dialog>
+</div>
+
+<!-- 引入 Vue 和 Element UI 的 JS -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            dialogVisible: false,
+            form: {
+                id: '',
+                tvgId: '',
+                tvgName: '',
+                tvgLogo: '',
+                groupTitle: '',
+                title: '',
+                url: ''
+            },
+            groupNames: [],
+            selectedGroup: ''
+        },
+        mounted() {
+            this.fetchGroupNames();
+            this.fetchData();
+        },
+        methods: {
+            async fetchGroupNames() {
+                try {
+                    const response = await fetch('/groupNameList');
+                    this.groupNames = await response.json();
+                } catch (error) {
+                    console.error('Error fetching group names:', error);
+                }
+            },
+            async fetchData() {
+                try {
+                    const response = await fetch('/list');
+                    const data = await response.json();
+                    this.displayData(data);
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+            },
+            async handleEdit() {
+                console.log('handleEdit called'); // 调试输出
+                try {
+                    const response = await fetch('/update', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(this.form)
+                    });
+
+                    if (response.ok) {
+                        console.log('Update successful');
+                        this.dialogVisible = false;
+                        this.fetchData(); // 刷新列表
+                    } else {
+                        console.error('Update failed:', response.statusText);
+                    }
+                } catch (error) {
+                    console.error('Error updating data:', error);
+                }
+            },
+            displayData(data) {
+                const container = document.getElementById('channelContainer');
+                container.innerHTML = ''; // 清空旧数据
+
+                const groupedData = data.reduce((acc, item) => {
+                    if (!acc[item.groupTitle]) {
+                        acc[item.groupTitle] = [];
+                    }
+                    acc[item.groupTitle].push(item);
+                    return acc;
+                }, {});
+
+                for (const group in groupedData) {
+                    const groupTitle = document.createElement('div');
+                    groupTitle.className = 'group-title';
+                    groupTitle.textContent = group;
+                    container.appendChild(groupTitle);
+
+                    groupedData[group].forEach(item => {
+                        const card = document.createElement('div');
+                        card.className = 'card';
+                        card.addEventListener('click', () => this.openDialog(item));
+
+                        const logoUrl = item.tvgLogo || `https://live.fanmingming.com/tv/${encodeURIComponent(item.tvgName)}.png`;
+                        const logo = document.createElement('img');
+                        logo.src = logoUrl;
+                        logo.alt = item.tvgName;
+
+                        let statusTag;
+                        if (item.status) {
+                            statusTag = document.createElement('div');
+                            statusTag.className = 'status-tag';
+                            statusTag.textContent = item.status;
+                        } else if (item.costTime && item.costTime !== "") {
+                            statusTag = document.createElement('div');
+                            statusTag.className = 'cost-time';
+                            statusTag.textContent = item.costTime + " ms";
+                        }
+
+                        const tvgName = document.createElement('div');
+                        tvgName.className = 'tvg-name';
+                        tvgName.textContent = item.tvgName;
+
+                        if (this.isIPv6(item.url)) {
+                            const ipv6Tag = document.createElement('div');
+                            ipv6Tag.className = 'ipv6-tag';
+                            ipv6Tag.textContent = 'IPv6';
+                            card.appendChild(ipv6Tag);
+                        }
+
+                        if (item.videoHeight > 0) {
+                            const videoHeightTag = document.createElement('div');
+                            videoHeightTag.className = 'video-height-tag';
+                            videoHeightTag.textContent = `${item.videoHeight}P`;
+                            card.appendChild(videoHeightTag);
+                        }
+
+                        card.appendChild(logo);
+                        if (statusTag) card.appendChild(statusTag);
+                        card.appendChild(tvgName);
+                        container.appendChild(card);
+                    });
+                }
+            },
+            isIPv6(url) {
+                return !/^(http|https):\/\/(\d{1,3}\.){3}\d{1,3}/.test(url);
+            },
+            openDialog(item) {
+                this.form.id = item.id;
+                this.form.tvgId = item.tvgId;
+                this.form.tvgName = item.tvgName;
+                this.form.tvgLogo = item.tvgLogo;
+                this.form.groupTitle = item.groupTitle;
+                this.form.title = item.title;
+                this.form.url = item.url;
+                this.dialogVisible = true;
+            },
+            querySearch(queryString, cb) {
+                const results = queryString
+                    ? this.groupNames.filter(this.createFilter(queryString)).map(name => ({ value: name }))
+                    : this.groupNames.map(name => ({ value: name }));
+                cb(results);
+            },
+            createFilter(queryString) {
+                return (name) => {
+                    return name.toLowerCase().indexOf(queryString.toLowerCase()) === 0;
+                };
+            }
+        }
+    });
+</script>
+</body>
+</html>
