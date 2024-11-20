@@ -26,7 +26,7 @@ public class LocalDbCheckScheduler implements Scheduler {
     }
 
     @Override
-    @Scheduled(initialDelay = 0, fixedDelay = 5 * 60 * 1000)
+    @Scheduled(cron = "0 */10 * * * ?")
     public void schedule() {
         log.info("start local database check schedule.");
 
