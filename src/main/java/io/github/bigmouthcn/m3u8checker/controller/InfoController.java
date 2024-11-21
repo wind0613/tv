@@ -91,9 +91,10 @@ public class InfoController {
         if (StringUtils.equals("1", withoutRepeat)) {
             Map<String, Integer> maximum = new HashMap<>(m3u8List.size());
             m3u8List.removeIf(m3u8 -> {
-                Integer height = maximum.get(m3u8.getTvgName());
+                String key = m3u8.getTitle();
+                Integer height = maximum.get(key);
                 if (height == null) {
-                    maximum.put(m3u8.getTvgName(), m3u8.getVideoHeight());
+                    maximum.put(key, m3u8.getVideoHeight());
                     return false;
                 } else {
                     return m3u8.getVideoHeight() < height;

@@ -44,7 +44,7 @@ public class LocalDbCheckScheduler implements Scheduler {
                 infoService.updateCheckResult(m3u8, checked, failType);
 
                 String msg = Objects.nonNull(failType) ? failType.name() : "OK";
-                log.info("checked {} for {} - {}", msg, m3u8.getTvgName(), m3u8.getUrl());
+                log.info("checked {} for {} - {}", msg, m3u8.getTitle(), m3u8.getUrl());
             } catch (Exception e) {
                 log.error("CheckScheduler schedule error", e);
             }

@@ -40,26 +40,12 @@ public class M3u8 {
         return StringUtils.isBlank(status);
     }
 
-    /**
-     * get tvgName
-     * @return 返回频道名称，从 tvgName > title > tvgId 中获取。
-     */
-    public String getTvgName() {
-        if (StringUtils.isBlank(tvgName)) {
-            tvgName = title;
-        }
-        if (StringUtils.isBlank(tvgName)) {
-            tvgName = tvgId;
-        }
-        return tvgName;
-    }
-
     public String convert2M3u8Line() {
         // #EXTINF:-1 group-title="湖南台" tvg-id="湖南爱晚" tvg-logo="https://live.fanmingming.com/tv/%E6%B9%96%E5%8D%97%E7%88%B1%E6%99%9A.png",湖南爱晚
         // http://phonetx.qing.mgtv.com/nn_live/nn_x64/dWlwPTEwMy4zOS4yMjYuMTAwJnFpZD0mY2RuZXhfaWQ9dHhfcGhvbmVfbGl2ZSZzPWUyNTY0MGRmY2M4MjAyNzY2YmI4NDNjNDIxNWUyZGJmJnVpZD0mdXVpZD04ODNkOTQ4NTljMzE2MWEyZTIyYjc5ODBlMjFiYjE2Ny02NzI3ZTI2NCZ2PTImYXM9MCZlcz0xNzMxOTE1Mzkz/HNGGMPP360.m3u8
         return "#EXTINF:-1 group-title=\"" + groupTitle
                 + "\" tvg-id=\"" + tvgId
-                + "\" tvg-name=\"" + getTvgName()
+                + "\" tvg-name=\"" + tvgName
                 + "\" tvg-logo=\"" + tvgLogo + "\", "
                 + title + "\n" + url;
     }
