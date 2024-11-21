@@ -16,10 +16,13 @@ public interface M3uParser {
         M3u8 currentEntry = null;
         for (String line : lines) {
             if (line.startsWith("#EXTINF")) {
+                line = line.replaceAll("#EXTINF:-1 ", "")
+                        .replaceAll("#EXTINF:-1,", "");
+
                 currentEntry = new M3u8();
                 String[] parts = line.split(",");
                 if (parts.length > 1) {
-                    currentEntry.setTitle(parts[1]);
+                    currentEntry.setTitle(parts[1].trim());
                 }
 
                 String[] attributes = parts[0].split(" ");
