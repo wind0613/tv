@@ -12,6 +12,8 @@ import org.apache.commons.lang3.StringUtils;
 @Accessors(chain = true)
 public class M3u8 {
 
+    public static final String STATUS_DELETED = "DELETED";
+
     /**
      * database id
      */

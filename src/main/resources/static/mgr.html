@@ -47,6 +47,7 @@
             </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
+            <el-button type="danger" @click="handleDelete">删除</el-button>
             <el-button @click="dialogVisible = false">关闭</el-button>
             <el-button type="primary" @click="handleEdit">修改</el-button>
         </div>
@@ -118,6 +119,24 @@
                     console.error('Error updating data:', error);
                 }
             },
+            async handleDelete() {
+                console.log('delete called'); // 调试输出
+                const response = await fetch('/delete', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: this.form.id
+                });
+
+                if (response.ok) {
+                    console.log('Delete successful');
+                    this.dialogVisible = false;
+                    this.fetchData(); // 刷新列表
+                } else {
+                    console.error('Update failed:', response.statusText);
+                }
+            },
             displayData(data) {
                 const container = document.getElementById('channelContainer');
                 container.innerHTML = ''; // 清空旧数据
@@ -144,7 +163,7 @@
                         const logoUrl = item.tvgLogo || `https://live.fanmingming.com/tv/${encodeURIComponent(item.tvgName)}.png`;
                         const logo = document.createElement('img');
                         logo.src = logoUrl;
-                        logo.alt = item.tvgName;
+                        logo.alt = item.title;
 
                         let statusTag;
                         if (item.status) {
@@ -159,7 +178,7 @@
 
                         const tvgName = document.createElement('div');
                         tvgName.className = 'tvg-name';
-                        tvgName.textContent = item.tvgName;
+                        tvgName.textContent = item.title;
 
                         if (this.isIPv6(item.url)) {
                             const ipv6Tag = document.createElement('div');

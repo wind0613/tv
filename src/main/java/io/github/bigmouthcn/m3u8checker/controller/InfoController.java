@@ -50,6 +50,15 @@ public class InfoController {
         return ResponseEntity.ok(entity);
     }
 
+    @PostMapping("/delete")
+    public ResponseEntity<Object> delete(@RequestBody Integer id) {
+        if (id == null) {
+            return ResponseEntity.badRequest().build();
+        }
+        infoService.delete(id);
+        return ResponseEntity.ok().build();
+    }
+
     @PostMapping("/m3u8/check")
     public ResponseEntity<Object> check(@RequestParam String url) {
         try {

@@ -97,7 +97,7 @@ public class InfoServiceImpl implements InfoService {
 
     @Override
     public void delete(Integer id) {
-        jdbcTemplate.update("DELETE FROM tvg_info WHERE id = ?", id);
+        jdbcTemplate.update("UPDATE tvg_info SET status = ? WHERE id = ?", M3u8.STATUS_DELETED, id);
     }
 
     @Override
@@ -136,12 +136,12 @@ public class InfoServiceImpl implements InfoService {
                     status, costTime, lastCheckTime, id);
         } else {
             // 如果不存在，那么是新的数据。
-            // 先按名称和URL查找，判断存在则更新，否则插入新数据。
-            List<M3u8> m3u8s = findByTvgNameAndUrl(m3u8.getTvgName(), m3u8.getUrl());
+            // 先按URL查找，判断存在则更新，否则插入新数据。
+            List<M3u8> m3u8s = findByUrl(m3u8.getUrl());
             if (m3u8s.size() > 0) {
                 // 理论上不存在多条数据的
-                jdbcTemplate.update("UPDATE tvg_info SET status = ?, cost_time = ?, last_check_time = ? WHERE id = ?",
-                        status, costTime, lastCheckTime, m3u8s.get(0).getId());
+                jdbcTemplate.update("UPDATE tvg_info SET status = ?, cost_time = ?, last_check_time = ? WHERE id = ? AND status != ?",
+                        status, costTime, lastCheckTime, m3u8s.get(0).getId(), M3u8.STATUS_DELETED);
             } else {
                 m3u8.setStatus(status)
                         .setCostTime(costTime)
@@ -170,5 +170,9 @@ public class InfoServiceImpl implements InfoService {
 
     private List<M3u8> findByTvgNameAndUrl(String tvgName, String url) {
         return jdbcTemplate.query("SELECT * FROM tvg_info WHERE tvg_name = ? AND url = ?", new Object[]{tvgName, url}, getM3u8RowMapper());
+    }
+
+    private List<M3u8> findByUrl(String url) {
+        return jdbcTemplate.query("SELECT * FROM tvg_info WHERE url = ?", new Object[]{url}, getM3u8RowMapper());
     }
 }
