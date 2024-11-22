@@ -1,7 +1,6 @@
 package io.github.bigmouthcn.m3u8checker.schedule;
 
 import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.io.IORuntimeException;
 import io.github.bigmouthcn.m3u8checker.checker.M3u8;
 import io.github.bigmouthcn.m3u8checker.database.InfoService;
 import lombok.extern.slf4j.Slf4j;
@@ -16,11 +15,11 @@ import java.util.List;
  */
 @Slf4j
 @Configuration
-public class WriteU38FileScheduler implements Scheduler {
+public class WriteM3uFileScheduler implements Scheduler {
 
     private final InfoService infoService;
 
-    public WriteU38FileScheduler(InfoService infoService) {
+    public WriteM3uFileScheduler(InfoService infoService) {
         this.infoService = infoService;
     }
 
@@ -42,8 +41,8 @@ public class WriteU38FileScheduler implements Scheduler {
                 }
                 allChannel.append(line).append("\n");
             }
-            FileUtil.writeString(allChannel.toString(), "iptv.m3u8", "UTF-8");
-            FileUtil.writeString(justOk.toString(), "iptv-ok.m3u8", "UTF-8");
+            FileUtil.writeString(allChannel.toString(), "iptv.m3u", "UTF-8");
+            FileUtil.writeString(justOk.toString(), "iptv-ok.m3u", "UTF-8");
             log.info("WriteU38FileScheduler success");
         } catch (Exception e) {
             log.error("WriteU38FileScheduler error", e);
