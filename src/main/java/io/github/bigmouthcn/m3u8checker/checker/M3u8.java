@@ -46,7 +46,11 @@ public class M3u8 {
         return "#EXTINF:-1 group-title=\"" + groupTitle
                 + "\" tvg-id=\"" + tvgId
                 + "\" tvg-name=\"" + tvgName
-                + "\" tvg-logo=\"" + tvgLogo + "\", "
+                + "\" tvg-logo=\"" + tvgLogo
+                + "\" t-time=\"" + costTime
+                + "\" v-w=\"" + videoWidth
+                + "\" v-h=\"" + videoHeight
+                + "\", "
                 + title + "\n" + url;
     }
 }
