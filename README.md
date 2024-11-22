@@ -9,10 +9,22 @@
 - 支持在线管理所有频道。
 - 提供 m3u 频道列表地址。
 
-# m3u list url
-可以在直播软件里通过添加自定义直播源的方式添加这个地址来收看直播频道。
+# M3U List
+可以在直播软件里通过添加自定义直播源的方式添加这些地址来收看直播频道。
 
-```http://127.0.0.1:8080/m3u/list?justOk=1&withoutRepeat=1```
+### Subscription 1 (Auto Update)
+```
+所有频道：
+https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv.m3u
+
+仅当前可用的频道：
+https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv-ok.m3u
+```
+
+### Subscription 2
+```
+http://127.0.0.1:8080/m3u/list?justOk=1&withoutRepeat=1
+```
 
 **参数说明**
   - `justOk`：值 `1` 只显示可用频道。
