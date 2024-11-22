@@ -679,231 +679,209 @@ https://live.iill.top/huya/660000
 https://live.iill.top/douyu/288016
 #EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」英雄联盟 𝟚" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="2505" v-w="-1" v-h="-1", 「斗鱼」英雄联盟 𝟚
 https://live.iill.top/douyu/424559
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」英雄联盟•手游" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="1031" v-w="-1" v-h="-1", 「B站」英雄联盟•手游
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」英雄联盟•手游" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="2948" v-w="-1" v-h="-1", 「B站」英雄联盟•手游
 https://live.iill.top/bilibili/23138275
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」王者荣耀 𝟙" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="3755" v-w="-1" v-h="-1", 「B站」王者荣耀 𝟙
-https://live.iill.top/bilibili/55
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」王者荣耀 𝟚" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="2288" v-w="-1" v-h="-1", 「B站」王者荣耀 𝟚
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」王者荣耀 𝟚" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="1670" v-w="-1" v-h="-1", 「B站」王者荣耀 𝟚
 https://live.iill.top/bilibili/21654762
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」王者荣耀 𝟙" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4275" v-w="-1" v-h="-1", 「虎牙」王者荣耀 𝟙
-https://live.iill.top/huya/660002
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」王者荣耀 𝟙" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1700" v-w="-1" v-h="-1", 「斗鱼」王者荣耀 𝟙
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」王者荣耀 𝟚" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="6157" v-w="-1" v-h="-1", 「虎牙」王者荣耀 𝟚
+https://live.iill.top/huya/660164
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」王者荣耀 𝟙" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="2844" v-w="-1" v-h="-1", 「斗鱼」王者荣耀 𝟙
 https://live.iill.top/douyu/1863767
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」王者荣耀 𝟚" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1676" v-w="-1" v-h="-1", 「斗鱼」王者荣耀 𝟚
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」王者荣耀 𝟚" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="2790" v-w="-1" v-h="-1", 「斗鱼」王者荣耀 𝟚
 https://live.iill.top/douyu/1984839
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」绝地求生" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="1387" v-w="-1" v-h="-1", 「B站」绝地求生
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」绝地求生" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="1617" v-w="-1" v-h="-1", 「B站」绝地求生
 https://live.iill.top/bilibili/98
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」绝地求生 𝟙" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="2760" v-w="-1" v-h="-1", 「虎牙」绝地求生 𝟙
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」绝地求生 𝟙" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4146" v-w="-1" v-h="-1", 「虎牙」绝地求生 𝟙
 https://live.iill.top/huya/660004
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」绝地求生" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1176" v-w="-1" v-h="-1", 「斗鱼」绝地求生
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」绝地求生" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1414" v-w="-1" v-h="-1", 「斗鱼」绝地求生
 https://live.iill.top/douyu/100
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」和平精英" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3243" v-w="-1" v-h="-1", 「虎牙」和平精英
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」和平精英" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3373" v-w="-1" v-h="-1", 「虎牙」和平精英
 https://live.iill.top/huya/660006
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」和平精英" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1122" v-w="-1" v-h="-1", 「斗鱼」和平精英
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」和平精英" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1909" v-w="-1" v-h="-1", 「斗鱼」和平精英
 https://live.iill.top/douyu/999
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」金铲铲之战" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1448" v-w="-1" v-h="-1", 「斗鱼」金铲铲之战
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」金铲铲之战" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1669" v-w="-1" v-h="-1", 「斗鱼」金铲铲之战
 https://live.iill.top/douyu/9715241
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」DOTA2" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1667" v-w="-1" v-h="-1", 「斗鱼」DOTA2
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」DOTA2" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4741" v-w="-1" v-h="-1", 「虎牙」DOTA2
+https://live.iill.top/huya/660118
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」DOTA2" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="3392" v-w="-1" v-h="-1", 「斗鱼」DOTA2
 https://live.iill.top/douyu/3811559
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」云顶之弈" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1636" v-w="-1" v-h="-1", 「斗鱼」云顶之弈
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」云顶之弈" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="2508" v-w="-1" v-h="-1", 「斗鱼」云顶之弈
 https://live.iill.top/douyu/522423
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」永劫无间" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3400" v-w="-1" v-h="-1", 「虎牙」永劫无间
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」永劫无间" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3537" v-w="-1" v-h="-1", 「虎牙」永劫无间
 https://live.iill.top/huya/660115
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」使命召唤•手游" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="1136" v-w="-1" v-h="-1", 「B站」使命召唤•手游
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」使命召唤•手游" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="1354" v-w="-1" v-h="-1", 「B站」使命召唤•手游
 https://live.iill.top/bilibili/22741849
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」使命召唤•手游" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1493" v-w="-1" v-h="-1", 「斗鱼」使命召唤•手游
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」使命召唤•手游" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="5457" v-w="-1" v-h="-1", 「虎牙」使命召唤•手游
+https://live.iill.top/huya/11718629
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」使命召唤•手游" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1820" v-w="-1" v-h="-1", 「斗鱼」使命召唤•手游
 https://live.iill.top/douyu/9223245
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」穿越火线" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4773" v-w="-1" v-h="-1", 「虎牙」穿越火线
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」穿越火线" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3239" v-w="-1" v-h="-1", 「虎牙」穿越火线
 https://live.iill.top/huya/660101
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」穿越火线 𝟙" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1052" v-w="-1" v-h="-1", 「斗鱼」穿越火线 𝟙
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」穿越火线 𝟙" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1584" v-w="-1" v-h="-1", 「斗鱼」穿越火线 𝟙
 https://live.iill.top/douyu/605964
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」穿越火线 𝟚" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="2723" v-w="-1" v-h="-1", 「斗鱼」穿越火线 𝟚
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」穿越火线 𝟚" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1440" v-w="-1" v-h="-1", 「斗鱼」穿越火线 𝟚
 https://live.iill.top/douyu/5388537
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」穿越火线•手游" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="8460" v-w="-1" v-h="-1", 「虎牙」穿越火线•手游
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」穿越火线•手游" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="5123" v-w="-1" v-h="-1", 「虎牙」穿越火线•手游
 https://live.iill.top/huya/660102
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」第五人格" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="1692" v-w="-1" v-h="-1", 「B站」第五人格
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」第五人格" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="3008" v-w="-1" v-h="-1", 「B站」第五人格
 https://live.iill.top/bilibili/5555
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」第五人格 " tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1602" v-w="-1" v-h="-1", 「斗鱼」第五人格 
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」第五人格 " tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1292" v-w="-1" v-h="-1", 「斗鱼」第五人格 
 https://live.iill.top/douyu/3226194
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」无畏契约 " tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="2792" v-w="-1" v-h="-1", 「B站」无畏契约 
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」无畏契约 " tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="2415" v-w="-1" v-h="-1", 「B站」无畏契约 
 https://live.iill.top/bilibili/22908869
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」无畏契约 " tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4141" v-w="-1" v-h="-1", 「虎牙」无畏契约 
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「虎牙」无畏契约 " tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3649" v-w="-1" v-h="-1", 「虎牙」无畏契约 
 https://live.iill.top/huya/660679
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」无畏契约 " tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="4000" v-w="-1" v-h="-1", 「斗鱼」无畏契约 
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」无畏契约 " tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1438" v-w="-1" v-h="-1", 「斗鱼」无畏契约 
 https://live.iill.top/douyu/4585645
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」原神" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1319" v-w="-1" v-h="-1", 「斗鱼」原神
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」原神" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1640" v-w="-1" v-h="-1", 「斗鱼」原神
 https://live.iill.top/douyu/10853239
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」QQ飞车•手游" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="2253" v-w="-1" v-h="-1", 「B站」QQ飞车•手游
-https://live.iill.top/bilibili/21743919
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」JJ斗地主" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="2071" v-w="-1" v-h="-1", 「B站」JJ斗地主
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」QQ飞车•手游" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1608" v-w="-1" v-h="-1", 「斗鱼」QQ飞车•手游
+https://live.iill.top/douyu/5040227
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「B站」JJ斗地主" tvg-logo="https://epg.iill.top/logo/哔哩哔哩.png" t-time="3447" v-w="-1" v-h="-1", 「B站」JJ斗地主
 https://live.iill.top/bilibili/22021983
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」JJ斗地主" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1479" v-w="-1" v-h="-1", 「斗鱼」JJ斗地主
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」JJ斗地主" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1089" v-w="-1" v-h="-1", 「斗鱼」JJ斗地主
 https://live.iill.top/douyu/488743
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」我的世界" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1210" v-w="-1" v-h="-1", 「斗鱼」我的世界
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」我的世界" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1462" v-w="-1" v-h="-1", 「斗鱼」我的世界
 https://live.iill.top/douyu/738878
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」FIFA" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1937" v-w="-1" v-h="-1", 「斗鱼」FIFA
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」FIFA" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1999" v-w="-1" v-h="-1", 「斗鱼」FIFA
 https://live.iill.top/douyu/7692166
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」火影忍者" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="4564" v-w="-1" v-h="-1", 「斗鱼」火影忍者
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」火影忍者" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1439" v-w="-1" v-h="-1", 「斗鱼」火影忍者
 https://live.iill.top/douyu/1997723
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」跑跑卡丁车" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="1620" v-w="-1" v-h="-1", 「斗鱼」跑跑卡丁车
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」跑跑卡丁车" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="2930" v-w="-1" v-h="-1", 「斗鱼」跑跑卡丁车
 https://live.iill.top/douyu/7722576
-#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」跑跑卡丁车•手游" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="2285" v-w="-1" v-h="-1", 「斗鱼」跑跑卡丁车•手游
+#EXTINF:-1 group-title="•游戏「赛事」" tvg-id="null" tvg-name="「斗鱼」跑跑卡丁车•手游" tvg-logo="https://epg.iill.top/logo/斗鱼.png" t-time="3636" v-w="-1" v-h="-1", 「斗鱼」跑跑卡丁车•手游
 https://live.iill.top/douyu/6672862
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3791" v-w="-1" v-h="-1", 埋堆堆 𝟙
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3535" v-w="-1" v-h="-1", 埋堆堆 𝟙
 https://live.iill.top/huya/23740156
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟛" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3499" v-w="-1" v-h="-1", 埋堆堆 𝟛
-https://live.iill.top/huya/23735126
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟜" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3169" v-w="-1" v-h="-1", 埋堆堆 𝟜
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3390" v-w="-1" v-h="-1", 埋堆堆 𝟚
+https://live.iill.top/huya/23749096
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟜" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="6118" v-w="-1" v-h="-1", 埋堆堆 𝟜
 https://live.iill.top/huya/23903123
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟝" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3566" v-w="-1" v-h="-1", 埋堆堆 𝟝
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟝" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4130" v-w="-1" v-h="-1", 埋堆堆 𝟝
 https://live.iill.top/huya/23734169
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟞" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4866" v-w="-1" v-h="-1", 埋堆堆 𝟞
-https://live.iill.top/huya/23863804
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟟" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4559" v-w="-1" v-h="-1", 埋堆堆 𝟟
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟟" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="853" v-w="-1" v-h="-1", 埋堆堆 𝟟
 https://live.iill.top/huya/23865080
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟠" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="8294" v-w="-1" v-h="-1", 埋堆堆 𝟠
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟠" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="10216" v-w="-1" v-h="-1", 埋堆堆 𝟠
 https://live.iill.top/huya/23864973
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟡" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3528" v-w="-1" v-h="-1", 埋堆堆 𝟡
-https://live.iill.top/huya/23903130
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙𝟙" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4567" v-w="-1" v-h="-1", 埋堆堆 𝟙𝟙
-https://live.iill.top/huya/23903183
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙𝟚" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4986" v-w="-1" v-h="-1", 埋堆堆 𝟙𝟚
-https://live.iill.top/huya/23903196
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙𝟛" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4200" v-w="-1" v-h="-1", 埋堆堆 𝟙𝟛
-https://live.iill.top/huya/23728674
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙𝟜" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="5206" v-w="-1" v-h="-1", 埋堆堆 𝟙𝟜
-https://live.iill.top/huya/23865036
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙𝟞" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3363" v-w="-1" v-h="-1", 埋堆堆 𝟙𝟞
-https://live.iill.top/huya/23865161
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙𝟟" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3213" v-w="-1" v-h="-1", 埋堆堆 𝟙𝟟
-https://live.iill.top/huya/23865058
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙𝟠" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3286" v-w="-1" v-h="-1", 埋堆堆 𝟙𝟠
-https://live.iill.top/huya/23824164
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙𝟡" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3665" v-w="-1" v-h="-1", 埋堆堆 𝟙𝟡
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟙𝟡" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4638" v-w="-1" v-h="-1", 埋堆堆 𝟙𝟡
 https://live.iill.top/huya/23863796
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟘" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3273" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟘
-https://live.iill.top/huya/23734183
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟙" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="2940" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟙
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟙" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="5122" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟙
 https://live.iill.top/huya/23728660
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟚" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4913" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟚
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟚" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3068" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟚
 https://live.iill.top/huya/23865142
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟛" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4865" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟛
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟛" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="894" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟛
 https://live.iill.top/huya/23734246
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟜" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="2420" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟜
-https://live.iill.top/huya/23865171
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟝" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="5051" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟝
-https://live.iill.top/huya/23734256
-#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟞" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="3684" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟞
+#EXTINF:-1 group-title="•埋堆「轮播」" tvg-id="null" tvg-name="埋堆堆 𝟚𝟞" tvg-logo="https://epg.iill.top/logo/埋堆堆.png" t-time="4117" v-w="-1" v-h="-1", 埋堆堆 𝟚𝟞
 https://live.iill.top/huya/23749083
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="音乐石榴「音乐」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="9954" v-w="-1" v-h="-1", 音乐石榴「音乐」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="音乐石榴「音乐」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="9447" v-w="-1" v-h="-1", 音乐石榴「音乐」
 https://live.iill.top/huya/17091681
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="音乐速递「音乐」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="5359" v-w="-1" v-h="-1", 音乐速递「音乐」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="音乐速递「音乐」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4507" v-w="-1" v-h="-1", 音乐速递「音乐」
 https://live.iill.top/huya/19439762
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="治愈•放松「音乐」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4795" v-w="-1" v-h="-1", 治愈•放松「音乐」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="治愈•放松「音乐」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4005" v-w="-1" v-h="-1", 治愈•放松「音乐」
 https://live.iill.top/huya/21241811
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="阅读•学习「音乐」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4144" v-w="-1" v-h="-1", 阅读•学习「音乐」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="阅读•学习「音乐」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3975" v-w="-1" v-h="-1", 阅读•学习「音乐」
 https://live.iill.top/huya/21241813
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="电视剧•1「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="5009" v-w="-1" v-h="-1", 电视剧•1「解说」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="电视剧•1「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3057" v-w="-1" v-h="-1", 电视剧•1「解说」
 https://live.iill.top/huya/21277391
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="恐怖电影「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3800" v-w="-1" v-h="-1", 恐怖电影「解说」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="动漫•1「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3595" v-w="-1" v-h="-1", 动漫•1「解说」
+https://live.iill.top/huya/19757963
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="恐怖电影「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="5445" v-w="-1" v-h="-1", 恐怖电影「解说」
 https://live.iill.top/huya/23419131
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="美剧「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4250" v-w="-1" v-h="-1", 美剧「解说」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="美剧「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="7983" v-w="-1" v-h="-1", 美剧「解说」
 https://live.iill.top/huya/20488841
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="七龙珠「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3760" v-w="-1" v-h="-1", 七龙珠「解说」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="七龙珠「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4281" v-w="-1" v-h="-1", 七龙珠「解说」
 https://live.iill.top/huya/25650806
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="止戈电影「解说」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3521" v-w="-1" v-h="-1", 止戈电影「解说」
-https://live.iill.top/huya/19863777
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="挨饿德•1「其他」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="5365" v-w="-1" v-h="-1", 挨饿德•1「其他」
-https://live.iill.top/huya/20985858
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="挨饿德•2「其他」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4954" v-w="-1" v-h="-1", 挨饿德•2「其他」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="挨饿德•2「其他」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="5548" v-w="-1" v-h="-1", 挨饿德•2「其他」
 https://live.iill.top/huya/17693860
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="荒野求生「其他」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3531" v-w="-1" v-h="-1", 荒野求生「其他」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="荒野求生「其他」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="2776" v-w="-1" v-h="-1", 荒野求生「其他」
 https://live.iill.top/huya/593667
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="茶啊二中「动画」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4763" v-w="-1" v-h="-1", 茶啊二中「动画」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="野行者「其他」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="6906" v-w="-1" v-h="-1", 野行者「其他」
+https://live.iill.top/huya/20072663
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="茶啊二中「动画」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4166" v-w="-1" v-h="-1", 茶啊二中「动画」
 https://live.iill.top/huya/11213191
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="哆啦A梦「动漫」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3684" v-w="-1" v-h="-1", 哆啦A梦「动漫」
-https://live.iill.top/huya/11601963
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="航海王「动漫」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4982" v-w="-1" v-h="-1", 航海王「动漫」
-https://live.iill.top/huya/16913382
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="七龙珠「动漫」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3085" v-w="-1" v-h="-1", 七龙珠「动漫」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="七龙珠「动漫」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="4664" v-w="-1" v-h="-1", 七龙珠「动漫」
 https://live.iill.top/huya/11601966
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="猫和老鼠「动漫」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3523" v-w="-1" v-h="-1", 猫和老鼠「动漫」
-https://live.iill.top/huya/11352879
-#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="中华小当家「动漫」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="8440" v-w="-1" v-h="-1", 中华小当家「动漫」
+#EXTINF:-1 group-title="•影视「轮播」" tvg-id="null" tvg-name="中华小当家「动漫」" tvg-logo="https://epg.iill.top/logo/虎牙.png" t-time="3298" v-w="-1" v-h="-1", 中华小当家「动漫」
 https://live.iill.top/huya/11342413
-#EXTINF:-1 group-title="央视台" tvg-id="CCTV-6" tvg-name="CCTV-6 电影频道" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" t-time="171" v-w="1920" v-h="1080", CCTV-6 电影频道
+#EXTINF:-1 group-title="央视台" tvg-id="CCTV-6" tvg-name="CCTV-6 电影频道" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" t-time="195" v-w="1920" v-h="1080", CCTV-6 电影频道
 http://mobilelive-timeshift.ysp.cctv.cn/timeshift/ysp/2013693901/timeshift.m3u8?delay=0
-#EXTINF:-1 group-title="卫视台" tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://live.fanmingming.com/tv/重庆卫视.png" t-time="161" v-w="-1" v-h="-1", 重庆卫视
+#EXTINF:-1 group-title="卫视台" tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://live.fanmingming.com/tv/重庆卫视.png" t-time="169" v-w="-1" v-h="-1", 重庆卫视
 http://p.ytelc.com/videojs.php?id=https://sjlivecdn9.cbg.cn/202411201110/app_2/_definst_/ls_2.stream/chunklist.m3u8
-#EXTINF:-1 group-title="动画频道" tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://live.fanmingming.com/tv/金鹰卡通.png" t-time="232" v-w="1920" v-h="1080", 金鹰卡通
+#EXTINF:-1 group-title="动画频道" tvg-id="金鹰卡通" tvg-name="金鹰卡通" tvg-logo="https://live.fanmingming.com/tv/金鹰卡通.png" t-time="227" v-w="1920" v-h="1080", 金鹰卡通
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000006000040024/2.m3u8
-#EXTINF:-1 group-title="湖南台" tvg-id="" tvg-name="湖南都市" tvg-logo="https://live.fanmingming.com/tv/湖南都市.png" t-time="59" v-w="1920" v-h="1080", 湖南都市
+#EXTINF:-1 group-title="湖南台" tvg-id="" tvg-name="湖南都市" tvg-logo="https://live.fanmingming.com/tv/湖南都市.png" t-time="45" v-w="1920" v-h="1080", 湖南都市
 http://223.145.224.215:8000/udp/239.76.246.104:1234
-#EXTINF:-1 group-title="卫视台" tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://live.fanmingming.com/tv/重庆卫视.png" t-time="112" v-w="-1" v-h="-1", 重庆卫视
+#EXTINF:-1 group-title="卫视台" tvg-id="重庆卫视" tvg-name="重庆卫视" tvg-logo="https://live.fanmingming.com/tv/重庆卫视.png" t-time="94" v-w="-1" v-h="-1", 重庆卫视
 http://p.ytelc.com/videojs.php?id=https://sjlivecdn9.cbg.cn/202411202141/app_2/_definst_/ls_2.stream/chunklist.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV4" tvg-logo="https://live.fanmingming.com/tv/CCTV4.png" t-time="268" v-w="1920" v-h="1080", CCTV-4 中文国际
+#EXTINF:-1 group-title="卫视台" tvg-id="宁夏卫视" tvg-name="宁夏卫视" tvg-logo="https://live.fanmingming.com/tv/宁夏卫视.png" t-time="99" v-w="-1" v-h="-1", 宁夏卫视
+http://stream.nxtv.com.cn/wspd/sd/live.m3u8?_upt=d8a164971732254197
+#EXTINF:-1 group-title="卫视台" tvg-id="青海卫视" tvg-name="青海卫视" tvg-logo="https://live.fanmingming.com/tv/青海卫视.png" t-time="174" v-w="1280" v-h="720", 青海卫视
+http://stream.qhbtv.com/qhws/sd/live.m3u8?_upt=bd4551361732118531
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV4" tvg-logo="https://live.fanmingming.com/tv/CCTV4.png" t-time="273" v-w="1920" v-h="1080", CCTV-4 中文国际
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226539/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV9" tvg-logo="https://live.fanmingming.com/tv/CCTV9.png" t-time="262" v-w="1920" v-h="1080", CCTV-9 纪录
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV9" tvg-logo="https://live.fanmingming.com/tv/CCTV9.png" t-time="216" v-w="1920" v-h="1080", CCTV-9 纪录
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226434/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV10" tvg-logo="https://live.fanmingming.com/tv/CCTV10.png" t-time="262" v-w="1920" v-h="1080", CCTV-10 科教
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV10" tvg-logo="https://live.fanmingming.com/tv/CCTV10.png" t-time="246" v-w="1920" v-h="1080", CCTV-10 科教
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226164/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV11" tvg-logo="https://live.fanmingming.com/tv/CCTV11.png" t-time="238" v-w="1920" v-h="1080", CCTV-11 戏曲
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV11" tvg-logo="https://live.fanmingming.com/tv/CCTV11.png" t-time="231" v-w="1920" v-h="1080", CCTV-11 戏曲
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226541/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV12" tvg-logo="https://live.fanmingming.com/tv/CCTV12.png" t-time="109" v-w="1920" v-h="1080", CCTV-12 社会与法
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV12" tvg-logo="https://live.fanmingming.com/tv/CCTV12.png" t-time="110" v-w="1920" v-h="1080", CCTV-12 社会与法
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226436/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV13" tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" t-time="175" v-w="1920" v-h="1080", CCTV-13 新闻
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV13" tvg-logo="https://live.fanmingming.com/tv/CCTV13.png" t-time="218" v-w="1920" v-h="1080", CCTV-13 新闻
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226438/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV14" tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" t-time="54" v-w="1920" v-h="1080", CCTV-14 少儿
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV14" tvg-logo="https://live.fanmingming.com/tv/CCTV14.png" t-time="55" v-w="1920" v-h="1080", CCTV-14 少儿
 http://[2409:8087:74d9:21::6]:80/270000001322/69900158041111100000002148/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV15" tvg-logo="https://live.fanmingming.com/tv/CCTV15.png" t-time="54" v-w="1920" v-h="1080", CCTV-15 音乐
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV15" tvg-logo="https://live.fanmingming.com/tv/CCTV15.png" t-time="55" v-w="1920" v-h="1080", CCTV-15 音乐
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226616/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" t-time="140" v-w="1920" v-h="1080", CCTV-16 奥林匹克
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV16" tvg-logo="https://live.fanmingming.com/tv/CCTV16.png" t-time="146" v-w="1920" v-h="1080", CCTV-16 奥林匹克
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226413/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" t-time="118" v-w="1920" v-h="1080", CCTV-17 农业农村
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="CCTV17" tvg-logo="https://live.fanmingming.com/tv/CCTV17.png" t-time="99" v-w="1920" v-h="1080", CCTV-17 农业农村
 http://[2409:8087:74d9:21::9]:80/270000001128/index.m3u8?cmcc_cid=9900000513
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="兵器科技" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/cctv/CCTVbqkj.png" t-time="324" v-w="720" v-h="576", CCTV-兵器科技
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="兵器科技" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/cctv/CCTVbqkj.png" t-time="317" v-w="720" v-h="576", CCTV-兵器科技
 http://111.61.236.247:9081/hls/61/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="风云足球" tvg-logo="https://live.fanmingming.com/tv/风云足球.png" t-time="167" v-w="720" v-h="576", CCTV-风云足球
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="风云足球" tvg-logo="https://live.fanmingming.com/tv/风云足球.png" t-time="135" v-w="720" v-h="576", CCTV-风云足球
 http://111.61.236.247:9081/hls/58/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="世界地理" tvg-logo="https://live.fanmingming.com/tv/世界地理.png" t-time="155" v-w="720" v-h="576", CCTV-世界地理
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="世界地理" tvg-logo="https://live.fanmingming.com/tv/世界地理.png" t-time="144" v-w="720" v-h="576", CCTV-世界地理
 http://111.61.236.247:9081/hls/62/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="高尔夫网球" tvg-logo="https://live.fanmingming.com/tv/央视高网.png" t-time="143" v-w="720" v-h="576", CCTV-央视高网
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="高尔夫网球" tvg-logo="https://live.fanmingming.com/tv/央视高网.png" t-time="162" v-w="720" v-h="576", CCTV-央视高网
 http://[2409:8087:74d9:21::6]/270000001128/9900000094/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="怀旧剧场" tvg-name="怀旧剧场" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/cctv/CCTVhjjc.png" t-time="164" v-w="720" v-h="576", CCTV-怀旧剧场
+#EXTINF:-1 group-title="央视频道" tvg-id="怀旧剧场" tvg-name="怀旧剧场" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/cctv/CCTVhjjc.png" t-time="158" v-w="720" v-h="576", CCTV-怀旧剧场
 http://111.61.236.247:9081/hls/67/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="文化精品" tvg-name="文化精品" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/cctv/CCTVwhjp.png" t-time="96" v-w="1920" v-h="1080", CCTV-文化精品
+#EXTINF:-1 group-title="央视频道" tvg-id="文化精品" tvg-name="文化精品" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/cctv/CCTVwhjp.png" t-time="103" v-w="1920" v-h="1080", CCTV-文化精品
 http://wouu.net:9977/udp/239.93.42.47:5140
-#EXTINF:-1 group-title="央视频道" tvg-id="女性时尚" tvg-name="女性时尚" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/cctv/CCTVnxss.png" t-time="164" v-w="720" v-h="576", CCTV-女性时尚
+#EXTINF:-1 group-title="央视频道" tvg-id="女性时尚" tvg-name="女性时尚" tvg-logo="https://gitee.com/suxuang/epglogo/raw/master/cctv/CCTVnxss.png" t-time="161" v-w="720" v-h="576", CCTV-女性时尚
 http://111.61.236.247:9081/hls/59/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="直播中国" tvg-logo="https://ghp.ci/raw.githubusercontent.com/suxuang/myIPTV/main/tvlog/直播中国.png" t-time="154" v-w="1280" v-h="720", 直播中国
+#EXTINF:-1 group-title="央视频道" tvg-id="null" tvg-name="直播中国" tvg-logo="https://ghp.ci/raw.githubusercontent.com/suxuang/myIPTV/main/tvlog/直播中国.png" t-time="195" v-w="1280" v-h="720", 直播中国
 https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=2820180516001
-#EXTINF:-1 group-title="央视频道" tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://live.fanmingming.com/tv/CETV1.png" t-time="156" v-w="720" v-h="576", CETV-1 综合教育
+#EXTINF:-1 group-title="央视频道" tvg-id="CETV1" tvg-name="CETV1" tvg-logo="https://live.fanmingming.com/tv/CETV1.png" t-time="191" v-w="720" v-h="576", CETV-1 综合教育
 http://[2409:8087:74d9:21::6]:80/270000001128/9900000046/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-id="CETV2" tvg-name="CETV2" tvg-logo="https://live.fanmingming.com/tv/CETV2.png" t-time="143" v-w="720" v-h="576", CETV-2 空中课堂
+#EXTINF:-1 group-title="央视频道" tvg-id="CETV2" tvg-name="CETV2" tvg-logo="https://live.fanmingming.com/tv/CETV2.png" t-time="158" v-w="720" v-h="576", CETV-2 空中课堂
 http://[2409:8087:74d9:21::6]:80/270000001128/9900000071/index.m3u8
+#EXTINF:-1 group-title="央视频道" tvg-id="CETV4" tvg-name="CETV4" tvg-logo="https://live.fanmingming.com/tv/CETV4.png" t-time="134" v-w="-1" v-h="-1", CETV-4 职业教育
+http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031126/1.m3u8
 #EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="北京卫视" tvg-logo="https://live.fanmingming.com/tv/北京卫视.png" t-time="55" v-w="1920" v-h="1080", 北京卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226739/index.m3u8
-#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png" t-time="202" v-w="1920" v-h="1080", 湖南卫视
+#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.com/tv/湖南卫视.png" t-time="185" v-w="1920" v-h="1080", 湖南卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226193/index.m3u8
 #EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="东方卫视" tvg-logo="https://live.fanmingming.com/tv/东方卫视.png" t-time="54" v-w="1920" v-h="1080", 东方卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226155/index.m3u8
-#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="天津卫视" tvg-logo="https://live.fanmingming.com/tv/天津卫视.png" t-time="128" v-w="1920" v-h="1080", 天津卫视
+#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="天津卫视" tvg-logo="https://live.fanmingming.com/tv/天津卫视.png" t-time="172" v-w="1920" v-h="1080", 天津卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226191/index.m3u8
-#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="安徽卫视" tvg-logo="https://live.fanmingming.com/tv/安徽卫视.png" t-time="150" v-w="1920" v-h="1080", 安徽卫视
+#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="安徽卫视" tvg-logo="https://live.fanmingming.com/tv/安徽卫视.png" t-time="133" v-w="1920" v-h="1080", 安徽卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226205/index.m3u8
-#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="山东卫视" tvg-logo="https://live.fanmingming.com/tv/山东卫视.png" t-time="132" v-w="1920" v-h="1080", 山东卫视
+#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="山东卫视" tvg-logo="https://live.fanmingming.com/tv/山东卫视.png" t-time="170" v-w="1920" v-h="1080", 山东卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226162/index.m3u8
-#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" t-time="185" v-w="1920" v-h="1080", 广东卫视
+#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="广东卫视" tvg-logo="https://live.fanmingming.com/tv/广东卫视.png" t-time="135" v-w="1920" v-h="1080", 广东卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226180/index.m3u8
 #EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="江苏卫视" tvg-logo="https://live.fanmingming.com/tv/江苏卫视.png" t-time="55" v-w="1920" v-h="1080", 江苏卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226157/index.m3u8
-#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="江西卫视" tvg-logo="https://live.fanmingming.com/tv/江西卫视.png" t-time="135" v-w="1920" v-h="1080", 江西卫视
+#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="江西卫视" tvg-logo="https://live.fanmingming.com/tv/江西卫视.png" t-time="192" v-w="1920" v-h="1080", 江西卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226207/index.m3u8
-#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="河北卫视" tvg-logo="https://live.fanmingming.com/tv/河北卫视.png" t-time="132" v-w="1920" v-h="1080", 河北卫视
+#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="河北卫视" tvg-logo="https://live.fanmingming.com/tv/河北卫视.png" t-time="169" v-w="1920" v-h="1080", 河北卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226442/index.m3u8
-#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="湖北卫视" tvg-logo="https://live.fanmingming.com/tv/湖北卫视.png" t-time="146" v-w="1920" v-h="1080", 湖北卫视
+#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="湖北卫视" tvg-logo="https://live.fanmingming.com/tv/湖北卫视.png" t-time="172" v-w="1920" v-h="1080", 湖北卫视
 http://[2409:8087:74d9:21::6]:80/270000001322/69900158041111100000002204/index.m3u8
-#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="东南卫视" tvg-logo="https://live.fanmingming.com/tv/东南卫视.png" t-time="118" v-w="1920" v-h="1080", 东南卫视
+#EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="东南卫视" tvg-logo="https://live.fanmingming.com/tv/东南卫视.png" t-time="111" v-w="1920" v-h="1080", 东南卫视
 http://[2409:8087:74d9:21::9]:80/270000001128/index.m3u8?cmcc_cid=9900000519
 #EXTINF:-1 group-title="卫视频道" tvg-id="null" tvg-name="重庆卫视" tvg-logo="https://live.fanmingming.com/tv/重庆卫视.png" t-time="164" v-w="1920" v-h="1080", 重庆卫视
 http://[2409:8087:74d9:21::6]:80/000000001000PLTV/88888888/224/3221226551/index.m3u8
