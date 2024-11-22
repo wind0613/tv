@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.Scheduled;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -41,11 +42,15 @@ public class WriteM3uFileScheduler implements Scheduler {
                 }
                 allChannel.append(line).append("\n");
             }
-            FileUtil.writeString(allChannel.toString(), "iptv.m3u", "UTF-8");
-            FileUtil.writeString(justOk.toString(), "iptv-ok.m3u", "UTF-8");
+            FileUtil.writeString(allChannel.toString(), getFilePathForUserHome("iptv.m3u"), "UTF-8");
+            FileUtil.writeString(justOk.toString(), getFilePathForUserHome("iptv-ok.m3u"), "UTF-8");
             log.info("WriteU38FileScheduler success");
         } catch (Exception e) {
             log.error("WriteU38FileScheduler error", e);
         }
+    }
+
+    private static String getFilePathForUserHome(String fileName) {
+        return System.getProperty("user.home") + File.separator + fileName;
     }
 }
