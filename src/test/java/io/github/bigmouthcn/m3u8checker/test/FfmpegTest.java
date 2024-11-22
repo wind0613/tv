@@ -14,9 +14,8 @@ public class FfmpegTest {
     @Test
     public void test() {
         // FFmpeg 命令
-        String ffmpeg = "/Users/huxiao/Documents/program/ffmpeg-work/ffmpeg";
         String url = "http://php.jdshipin.com:8880/iptv.php?id=hnds";
-        MetaInfo metaInfo = getMetaInfo(ffmpeg, url);
+        MetaInfo metaInfo = getMetaInfo(url);
         System.out.println(metaInfo);
     }
 }
