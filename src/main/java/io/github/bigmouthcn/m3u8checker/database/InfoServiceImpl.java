@@ -5,6 +5,7 @@ import io.github.bigmouthcn.m3u8checker.checker.CheckResult;
 import io.github.bigmouthcn.m3u8checker.checker.FailType;
 import io.github.bigmouthcn.m3u8checker.checker.M3u8;
 import io.github.bigmouthcn.m3u8checker.checker.MetaInfo;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
@@ -22,6 +23,7 @@ import java.util.stream.Collectors;
  * @author Allen Hu
  * @date 2024/11/15
  */
+@Slf4j
 @Configuration
 public class InfoServiceImpl implements InfoService {
 
@@ -140,8 +142,10 @@ public class InfoServiceImpl implements InfoService {
             List<M3u8> m3u8s = findByUrl(m3u8.getUrl());
             if (m3u8s.size() > 0) {
                 // 理论上不存在多条数据的
-                jdbcTemplate.update("UPDATE tvg_info SET status = ?, cost_time = ?, last_check_time = ? WHERE id = ? AND status != ?",
-                        status, costTime, lastCheckTime, m3u8s.get(0).getId(), M3u8.STATUS_DELETED);
+                Integer firstId = m3u8s.get(0).getId();
+                int rows = jdbcTemplate.update("UPDATE tvg_info SET status = ?, cost_time = ?, last_check_time = ? WHERE id = ? AND status != ?",
+                        status, costTime, lastCheckTime, firstId, M3u8.STATUS_DELETED);
+                log.info("update {} rows, id = {}", rows, firstId);
             } else {
                 m3u8.setStatus(status)
                         .setCostTime(costTime)
