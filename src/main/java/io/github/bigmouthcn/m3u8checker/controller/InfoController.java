@@ -33,6 +33,7 @@ public class InfoController {
     @GetMapping("/list")
     public ResponseEntity<Object> list() {
         List<M3u8> m3u8List = infoService.findAll();
+        m3u8List.removeIf(m3u8 -> StringUtils.equals(M3u8.STATUS_DELETED, m3u8.getStatus()));
         return ResponseEntity.ok(m3u8List);
     }
 
