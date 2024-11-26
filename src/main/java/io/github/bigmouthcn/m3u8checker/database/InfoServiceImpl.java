@@ -132,10 +132,10 @@ public class InfoServiceImpl implements InfoService {
         String status = Objects.nonNull(failType) ? failType.name() : "";
         String costTime = Objects.nonNull(checkResult) ? String.valueOf(checkResult.getDuration()) : "";
         String lastCheckTime = String.valueOf(System.currentTimeMillis());
-        if (exists != null) {
+        if (Objects.nonNull(exists)) {
             // 如果存在，那么说明是对数据库进行检查
-            jdbcTemplate.update("UPDATE tvg_info SET status = ?, cost_time = ?, last_check_time = ? WHERE id = ?",
-                    status, costTime, lastCheckTime, id);
+            jdbcTemplate.update("UPDATE tvg_info SET status = ?, cost_time = ?, last_check_time = ? WHERE id = ? AND status != ?",
+                    status, costTime, lastCheckTime, id, M3u8.STATUS_DELETED);
         } else {
             // 如果不存在，那么是新的数据。
             // 先按URL查找，判断存在则更新，否则插入新数据。
