@@ -103,7 +103,7 @@
                     const response = await fetch('/list');
                     const data = await response.json();
                     this.allChannels = data;
-                    this.displayData(data);
+                    this.filterChannels();
                 } catch (error) {
                     console.error('Error fetching data:', error);
                 }
