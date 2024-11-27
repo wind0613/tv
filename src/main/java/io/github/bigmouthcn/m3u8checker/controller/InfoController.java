@@ -31,9 +31,14 @@ public class InfoController {
     }
 
     @GetMapping("/list")
-    public ResponseEntity<Object> list() {
+    public ResponseEntity<Object> list(String status) {
         List<M3u8> m3u8List = infoService.findAll();
         m3u8List.removeIf(m3u8 -> StringUtils.equals(M3u8.STATUS_DELETED, m3u8.getStatus()));
+        if (StringUtils.equals("OK", status)) {
+            m3u8List.removeIf(m3u8 -> StringUtils.isNotBlank(m3u8.getStatus()));
+        } else if (StringUtils.isNotBlank(status)) {
+            m3u8List.removeIf(m3u8 -> !StringUtils.equals(status, m3u8.getStatus()));
+        }
         return ResponseEntity.ok(m3u8List);
     }
 
