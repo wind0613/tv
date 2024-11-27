@@ -56,56 +56,47 @@ h1 {
     font-size: 1.2em;
     margin-top: 20px;
 }
-.status-tag {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 3px 8px;
-    font-size: 0.7em;
+.status-tag,
+.cost-time{
+    font-size: 10px;
+    margin: 4px 0px;
+    padding: 0px 4px;
+    line-height: 20px;
     color: white;
-    border-radius: 5px;
+}
+.status-tag {
     background-color: red;
 }
-.status-ok {
+.cost-time {
     background-color: green;
 }
-.cost-time {
+.bottom-div {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 3px 8px;
-    font-size: 0.7em;
-    color: white;
-    border-radius: 5px;
-    background-color: green;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .tvg-name {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    padding: 3px 8px;
-    font-size: 0.8em;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-}
-.ipv6-tag {
-    position: absolute;
     top: 10px;
     left: 10px;
-    padding: 3px 8px;
     font-size: 0.8em;
     color: white;
-    border-radius: 5px;
-    background: linear-gradient(to right, #2ecc71, #3498db, #9b59b6);
+    padding: 2px 0px;
+}
+.ipv6-tag {
+    font-size: 10px;
+    color: black;
+    line-height: 20px;
+    margin: 4px 8px 4px 0px;
+    padding: 0px 4px;
+    background: rgb(216,118,4);
+    background: linear-gradient(82deg, rgba(216,118,4,1) 0%, rgba(251,244,129,1) 35%, rgba(252,222,46,1) 79%, rgba(209,100,4,1) 100%);
 }
 .video-height-tag {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    padding: 3px 8px;
-    font-size: 0.8em;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
+    top: 4px;
+    right: 10px;
+    width: 30px !important;
 }

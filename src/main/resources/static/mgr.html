@@ -209,6 +209,9 @@
                         const logo = document.createElement('img');
                         logo.src = logoUrl;
                         logo.alt = item.title;
+                        logo.onload = () => {
+                            card.appendChild(logo);
+                        }
 
                         let statusTag;
                         if (item.status) {
@@ -221,27 +224,30 @@
                             statusTag.textContent = item.costTime + " ms";
                         }
 
+                        const bottom = document.createElement('div');
+                        bottom.className = 'bottom-div';
+
                         const tvgName = document.createElement('div');
                         tvgName.className = 'tvg-name';
                         tvgName.textContent = item.title;
+
+                        if (item.videoHeight >= 1080) {
+                            const videoHeightTag = document.createElement('img');
+                            videoHeightTag.className = 'video-height-tag';
+                            videoHeightTag.src = `images/${item.videoHeight}p.png`;
+                            card.appendChild(videoHeightTag);
+                        }
 
                         if (this.isIPv6(item.url)) {
                             const ipv6Tag = document.createElement('div');
                             ipv6Tag.className = 'ipv6-tag';
                             ipv6Tag.textContent = 'IPv6';
-                            card.appendChild(ipv6Tag);
+                            bottom.appendChild(ipv6Tag);
                         }
 
-                        if (item.videoHeight > 0) {
-                            const videoHeightTag = document.createElement('div');
-                            videoHeightTag.className = 'video-height-tag';
-                            videoHeightTag.textContent = `${item.videoHeight}P`;
-                            card.appendChild(videoHeightTag);
-                        }
-
-                        card.appendChild(logo);
-                        if (statusTag) card.appendChild(statusTag);
                         card.appendChild(tvgName);
+                        card.appendChild(bottom);
+                        bottom.appendChild(statusTag);
                         container.appendChild(card);
                     });
                 }
