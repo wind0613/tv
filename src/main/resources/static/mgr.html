@@ -17,7 +17,18 @@
                 v-model="searchQuery"
                 placeholder="搜索频道"
                 @input="filterChannels"
+                class="input-with-select"
                 clearable>
+                <el-select v-model="statusValue" slot="append" placeholder="请选择" @change="fetchData">
+                    <el-option
+                            v-for="item in cities"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value">
+                        <span style="float: left">{{ item.label }}</span>
+                        <span style="float: right; color: #8492a6; font-size: 13px">{{ item.value }}</span>
+                    </el-option>
+                </el-select>
         </el-input>
     </div>
     <div class="container" id="channelContainer"></div>
@@ -83,7 +94,33 @@
             groupNames: [],
             selectedGroup: '',
             searchQuery: '',
-            allChannels: []
+            allChannels: [],
+            cities: [{
+                value: '',
+                label: '全部频道'
+            }, {
+                value: 'OK',
+                label: '仅可用'
+            }, {
+                value: 'NO_OK',
+                label: '无效'
+            }, {
+                value: 'NOT_M3U8',
+                label: '非频道列表'
+            }, {
+                value: 'CONNECT_TIMEOUT',
+                label: '连接超时'
+            }, {
+                value: 'SOCKET_TIMEOUT',
+                label: '播放超时'
+            }, {
+                value: 'SOCKET_ERROR',
+                label: '直播源错误'
+            }, {
+                value: 'UNKNOWN',
+                label: '未知'
+            }],
+            statusValue: ''
         },
         mounted() {
             this.fetchGroupNames();
@@ -92,7 +129,7 @@
         methods: {
             async fetchGroupNames() {
                 try {
-                    const response = await fetch('/groupNameList');
+                    const response = await fetch('http://47.112.162.110:8080/groupNameList');
                     this.groupNames = await response.json();
                 } catch (error) {
                     console.error('Error fetching group names:', error);
@@ -100,7 +137,7 @@
             },
             async fetchData() {
                 try {
-                    const response = await fetch('/list');
+                    const response = await fetch(`http://47.112.162.110:8080/list?status=${this.statusValue || ''}`);
                     const data = await response.json();
                     this.allChannels = data;
                     this.filterChannels();
@@ -111,7 +148,7 @@
             async handleEdit() {
                 console.log('handleEdit called'); // 调试输出
                 try {
-                    const response = await fetch('/update', {
+                    const response = await fetch('http://47.112.162.110:8080/update', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -132,7 +169,7 @@
             },
             async handleDelete() {
                 console.log('delete called'); // 调试输出
-                const response = await fetch('/delete', {
+                const response = await fetch('http://47.112.162.110:8080/delete', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

@@ -1,6 +1,6 @@
 body {
     background: rgb(2,0,36);
-    background: linear-gradient(337deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,118,142,1) 100%);
+    background: linear-gradient(250deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,118,142,1) 100%);
     color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,10 +14,11 @@ h1 {
 .search-container {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 20px auto;
+    width: 400px;
 }
-.search-container .el-input {
-    width: 300px;
+.search-container .el-select .el-input {
+    width: 140px;
 }
 .container {
     display: flex;
