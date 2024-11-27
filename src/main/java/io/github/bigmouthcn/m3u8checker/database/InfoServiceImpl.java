@@ -16,8 +16,10 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 
 /**
  * @author Allen Hu
@@ -143,9 +145,8 @@ public class InfoServiceImpl implements InfoService {
             if (m3u8s.size() > 0) {
                 // 理论上不存在多条数据的
                 Integer firstId = m3u8s.get(0).getId();
-                int rows = jdbcTemplate.update("UPDATE tvg_info SET status = ?, cost_time = ?, last_check_time = ? WHERE id = ? AND status != ?",
+                jdbcTemplate.update("UPDATE tvg_info SET status = ?, cost_time = ?, last_check_time = ? WHERE id = ? AND status != ?",
                         status, costTime, lastCheckTime, firstId, M3u8.STATUS_DELETED);
-                log.info("update {} rows, id = {}", rows, firstId);
             } else {
                 m3u8.setStatus(status)
                         .setCostTime(costTime)

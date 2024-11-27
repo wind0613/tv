@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import okhttp3.Response;
 import org.apache.http.conn.ConnectTimeoutException;
 
+import java.io.IOException;
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
 
@@ -39,7 +40,7 @@ public abstract class AbstractM3u8Checker implements M3u8Checker {
                 throw new CheckFailException(FailType.CONNECT_TIMEOUT);
             } else if (e instanceof SocketTimeoutException) {
                 throw new CheckFailException(FailType.SOCKET_TIMEOUT);
-            } else if (e instanceof SocketException) {
+            } else if (e instanceof IOException) {
                 throw new CheckFailException(FailType.SOCKET_ERROR);
             } else if (e instanceof CheckFailException) {
                 throw (CheckFailException) e;
