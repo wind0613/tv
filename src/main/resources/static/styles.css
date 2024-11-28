@@ -108,3 +108,6 @@ h1 {
     right: 10px;
     width: 30px !important;
 }
+.video-player-dialog {
+    background-color: black;
+}

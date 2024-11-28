@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <!-- 引入自定义 CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- TCPlayer -->
+    <link href="https://web.sdk.qcloud.com/player/tcplayer/release/v4.7.2/tcplayer.min.css" rel="stylesheet"/>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.7.2/libs/TXLivePlayer-1.2.3.min.js"></script>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.7.2/libs/hls.min.1.1.6.js"></script>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.7.2/libs/flv.min.1.6.3.js"></script>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.7.2/libs/dash.all.min.4.5.2.js"></script>
+    <script src="https://web.sdk.qcloud.com/player/tcplayer/release/v4.7.2/tcplayer.v4.7.2.min.js"></script>
 </head>
 <body>
 <div id="app">
@@ -33,11 +40,24 @@
     </div>
     <div class="container" id="channelContainer"></div>
 
-    <!-- 使用 Element UI 的模态框 -->
+    <!-- 视频播放框 -->
+    <el-dialog
+            :visible.sync="videoDialogVisible"
+            custom-class="video-player-dialog"
+            width="75%"
+            append-to-body="true"
+            destroy-on-close="true"
+            @opened="openPlayerDialog">
+        <div id="videoContainer" style="width: 100%; height: 550px; background-color: black;">
+            <video id="player-id" style="width: 100%; height: 100%" preload="auto" playsinline webkit-playsinline></video>
+        </div>
+    </el-dialog>
+
+    <!-- 编辑框 -->
     <el-dialog
             title="频道信息"
             :visible.sync="dialogVisible"
-            width="600px">
+            width="50%">
         <el-form ref="form" :model="form" label-width="100px">
             <el-form-item label="ID">
                 <el-input v-model="form.id" readonly></el-input>
@@ -66,9 +86,10 @@
             </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
-            <el-button type="danger" @click="handleDelete">删除</el-button>
-            <el-button @click="dialogVisible = false">关闭</el-button>
-            <el-button type="primary" @click="handleEdit">修改</el-button>
+            <el-button @click="handlePlay" size="small" type="primary" icon="el-icon-video-play" circle></el-button>
+            <el-button size="small" type="primary" @click="handleEdit">修改</el-button>
+            <el-button size="small" type="danger" @click="handleDelete">删除</el-button>
+            <el-button size="small" @click="dialogVisible = false">关闭</el-button>
         </div>
     </el-dialog>
 </div>
@@ -82,6 +103,7 @@
         el: '#app',
         data: {
             dialogVisible: false,
+            videoDialogVisible: false,
             form: {
                 id: '',
                 tvgId: '',
@@ -141,6 +163,15 @@
                 } catch (error) {
                     console.error('Error fetching data:', error);
                 }
+            },
+            async handlePlay() {
+                this.videoDialogVisible = true;
+            },
+            async openPlayerDialog() {
+                var player = TCPlayer('player-id', {});
+                player.src(this.form.url);
+                player.autoplay(1);
+                console.log(`Play video: ${this.form.url}`);
             },
             async handleEdit() {
                 console.log('handleEdit called'); // 调试输出
@@ -213,6 +244,31 @@
                             card.appendChild(logo);
                         }
 
+                        const tvgName = document.createElement('div');
+                        tvgName.className = 'tvg-name';
+                        tvgName.textContent = item.title;
+                        card.appendChild(tvgName);
+
+                        if (item.videoHeight >= 1080) {
+                            const videoHeightTag = document.createElement('img');
+                            videoHeightTag.className = 'video-height-tag';
+                            videoHeightTag.src = `images/${item.videoHeight}p.png`;
+                            card.appendChild(videoHeightTag);
+                        }
+
+                        // 添加底部容器
+                        const bottom = document.createElement('div');
+                        bottom.className = 'bottom-div';
+
+                        // 添加IPv6标识
+                        if (this.isIPv6(item.url)) {
+                            const ipv6Tag = document.createElement('div');
+                            ipv6Tag.className = 'ipv6-tag';
+                            ipv6Tag.textContent = 'IPv6';
+                            bottom.appendChild(ipv6Tag);
+                        }
+
+                        // 添加状态
                         let statusTag;
                         if (item.status) {
                             statusTag = document.createElement('div');
@@ -224,30 +280,9 @@
                             statusTag.textContent = item.costTime + " ms";
                         }
 
-                        const bottom = document.createElement('div');
-                        bottom.className = 'bottom-div';
-
-                        const tvgName = document.createElement('div');
-                        tvgName.className = 'tvg-name';
-                        tvgName.textContent = item.title;
-
-                        if (item.videoHeight >= 1080) {
-                            const videoHeightTag = document.createElement('img');
-                            videoHeightTag.className = 'video-height-tag';
-                            videoHeightTag.src = `images/${item.videoHeight}p.png`;
-                            card.appendChild(videoHeightTag);
-                        }
-
-                        if (this.isIPv6(item.url)) {
-                            const ipv6Tag = document.createElement('div');
-                            ipv6Tag.className = 'ipv6-tag';
-                            ipv6Tag.textContent = 'IPv6';
-                            bottom.appendChild(ipv6Tag);
-                        }
-
-                        card.appendChild(tvgName);
-                        card.appendChild(bottom);
                         bottom.appendChild(statusTag);
+
+                        card.appendChild(bottom);
                         container.appendChild(card);
                     });
                 }
