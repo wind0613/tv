@@ -16,8 +16,7 @@ import java.util.List;
 public class M3u8CheckerTest {
 
     private final M3uParser parser = new FileM3uParser();
-    private final M3u8Checker checker = new OkHttpM3u8Checker(Application.createOkHttpClient(),
-            new ApplicationConfig());
+    private final M3u8Checker checker = new OkHttpM3u8Checker(new ApplicationConfig(), Application.createOkHttpClient());
 
     @Test
     public void ipv4Normal() {

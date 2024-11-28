@@ -37,7 +37,7 @@ public class MetaInfoResolveScheduler implements Scheduler {
                     continue;
                 }
                 MetaInfo metaInfo = m3u8Checker.getMetaInfo(m3u8.getUrl());
-                if (Objects.nonNull(metaInfo)) {
+                if (Objects.nonNull(metaInfo) && metaInfo.isValid()) {
                     infoService.updateMetaInfo(m3u8, metaInfo);
                 }
             } catch (Exception e) {

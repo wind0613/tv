@@ -14,7 +14,7 @@ public class FfmpegTest {
     @Test
     public void test() {
         // FFmpeg 命令
-        String url = "http://php.jdshipin.com:8880/iptv.php?id=hnds";
+        String url = "http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000006000040024/1.m3u8";
         MetaInfo metaInfo = getMetaInfo(url);
         System.out.println(metaInfo);
     }

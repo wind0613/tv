@@ -18,6 +18,10 @@ public class MetaInfo {
     private VideoInfo videoInfo = new VideoInfo();
     private AudioInfo audioInfo = new AudioInfo();
 
+    public boolean isValid() {
+        return videoInfo.getWidth() > 0 && videoInfo.getHeight() > 0;
+    }
+
     @Data
     @Accessors(chain = true)
     public static class VideoInfo {
