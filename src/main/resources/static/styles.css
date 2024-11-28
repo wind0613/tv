@@ -31,7 +31,7 @@ h1 {
     border-radius: 8px;
     margin: 10px;
     padding: 15px;
-    width: 186px;
+    width: 184px;
     text-align: center;
     height: 130px;
     display: flex;
@@ -40,6 +40,14 @@ h1 {
     align-items: center;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(89, 89, 89, 0.35);
+    backdrop-filter: blur(17.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px;
+    -webkit-border-radius: 12px;
+    color: rgb(128, 128, 128);
 }
 .card:hover {
     transform: translateY(-5px);
