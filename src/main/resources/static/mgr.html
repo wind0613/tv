@@ -148,7 +148,7 @@
         methods: {
             async fetchGroupNames() {
                 try {
-                    const response = await fetch('http://47.112.162.110:8080/groupNameList');
+                    const response = await fetch('/groupNameList');
                     this.groupNames = await response.json();
                 } catch (error) {
                     console.error('Error fetching group names:', error);
@@ -156,7 +156,7 @@
             },
             async fetchData() {
                 try {
-                    const response = await fetch(`http://47.112.162.110:8080/list?status=${this.statusValue || ''}`);
+                    const response = await fetch(`/list?status=${this.statusValue || ''}`);
                     const data = await response.json();
                     this.allChannels = data;
                     this.filterChannels();
@@ -176,7 +176,7 @@
             async handleEdit() {
                 console.log('handleEdit called'); // 调试输出
                 try {
-                    const response = await fetch('http://47.112.162.110:8080/update', {
+                    const response = await fetch('/update', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
@@ -197,7 +197,7 @@
             },
             async handleDelete() {
                 console.log('delete called'); // 调试输出
-                const response = await fetch('http://47.112.162.110:8080/delete', {
+                const response = await fetch('/delete', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
