@@ -13,14 +13,18 @@
 可以在直播软件里通过添加自定义直播源的方式添加这些地址来收看直播频道。
 
 ### 订阅 1 (自动更新)
+
+**所有频道：**
 ```
 所有频道：
 [原始]
 https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv.m3u
 [国内访问]
 https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv.m3u
+```
 
-仅当前可用的频道：
+:+1::smiley: **仅当前可用的频道：**
+```
 [原始]
 https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv-ok.m3u
 [国内访问] 
