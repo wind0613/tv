@@ -1,5 +1,6 @@
 package io.github.bigmouthcn.m3u8checker.controller;
 
+import io.github.bigmouthcn.m3u8checker.ApplicationConfig;
 import io.github.bigmouthcn.m3u8checker.checker.*;
 import io.github.bigmouthcn.m3u8checker.database.InfoService;
 import org.apache.commons.lang3.StringUtils;
@@ -19,10 +20,12 @@ public class InfoController {
 
     private final InfoService infoService;
     private final M3u8Checker m3u8Checker;
+    private final ApplicationConfig applicationConfig;
 
-    public InfoController(InfoService infoService, M3u8Checker m3u8Checker) {
+    public InfoController(InfoService infoService, M3u8Checker m3u8Checker, ApplicationConfig applicationConfig) {
         this.infoService = infoService;
         this.m3u8Checker = m3u8Checker;
+        this.applicationConfig = applicationConfig;
     }
 
     @GetMapping("/")
@@ -115,5 +118,15 @@ public class InfoController {
         }
 
         return ResponseEntity.ok(m3u8Res);
+    }
+
+    @PostMapping("/updateTvGroupAndTitle")
+    public ResponseEntity<Object> updateTvGroupAndTitle() {
+        List<M3u8> m3u8List = infoService.findAll();
+        for (M3u8 m3u8 : m3u8List) {
+            applicationConfig.updateM3u8Titles(m3u8);
+            infoService.updateJustInfo(m3u8);
+        }
+        return ResponseEntity.ok(m3u8List.size());
     }
 }

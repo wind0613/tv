@@ -15,7 +15,7 @@ public interface InfoService {
 
     List<M3u8> findAll();
 
-    void save(M3u8 m3u8);
+    void insert(M3u8 m3u8);
 
     void delete(Integer id);
 

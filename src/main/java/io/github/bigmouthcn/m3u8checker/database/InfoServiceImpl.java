@@ -1,6 +1,7 @@
 package io.github.bigmouthcn.m3u8checker.database;
 
 import cn.hutool.core.io.IoUtil;
+import io.github.bigmouthcn.m3u8checker.ApplicationConfig;
 import io.github.bigmouthcn.m3u8checker.checker.CheckResult;
 import io.github.bigmouthcn.m3u8checker.checker.FailType;
 import io.github.bigmouthcn.m3u8checker.checker.M3u8;
@@ -50,9 +51,11 @@ public class InfoServiceImpl implements InfoService {
     //);
 
     private final JdbcTemplate jdbcTemplate;
+    private final ApplicationConfig applicationConfig;
 
-    public InfoServiceImpl(JdbcTemplate jdbcTemplate) {
+    public InfoServiceImpl(JdbcTemplate jdbcTemplate, ApplicationConfig applicationConfig) {
         this.jdbcTemplate = jdbcTemplate;
+        this.applicationConfig = applicationConfig;
     }
 
     @Override
@@ -94,9 +97,14 @@ public class InfoServiceImpl implements InfoService {
     }
 
     @Override
-    public void save(M3u8 m3u8) {
+    public void insert(M3u8 m3u8) {
+        applicationConfig.updateM3u8Titles(m3u8);
+
+        String groupTitle = m3u8.getGroupTitle();
+        String title = m3u8.getTitle();
+
         jdbcTemplate.update("INSERT INTO tvg_info (tvg_id, tvg_name, tvg_logo, group_title, title, url, status, cost_time, last_check_time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                m3u8.getTvgId(), m3u8.getTvgName(), m3u8.getTvgLogo(), m3u8.getGroupTitle(), m3u8.getTitle(), m3u8.getUrl(), m3u8.getStatus(), m3u8.getCostTime(), m3u8.getLastCheckTime());
+                m3u8.getTvgId(), m3u8.getTvgName(), m3u8.getTvgLogo(), groupTitle, title, m3u8.getUrl(), m3u8.getStatus(), m3u8.getCostTime(), m3u8.getLastCheckTime());
     }
 
     @Override
@@ -151,7 +159,9 @@ public class InfoServiceImpl implements InfoService {
                 m3u8.setStatus(status)
                         .setCostTime(costTime)
                         .setLastCheckTime(lastCheckTime);
-                this.save(m3u8);
+                if (failType != FailType.NO_OK) {
+                    this.insert(m3u8);
+                }
             }
         }
     }
