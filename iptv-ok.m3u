@@ -1,17 +1,19 @@
 #EXTM3U
-#EXTINF:-1 group-title="卫视台" tvg-id="null" tvg-name="三沙卫视" tvg-logo="https://live.fanmingming.com/tv/三沙卫视.png" t-time="352" v-w="1920" v-h="1080", 三沙卫视
+#EXTINF:-1 group-title="卫视台" tvg-id="null" tvg-name="三沙卫视" tvg-logo="https://live.fanmingming.com/tv/三沙卫视.png" t-time="417" v-w="1920" v-h="1080", 三沙卫视
 http://[2409:8087:5e00:24::1e]:6060/000000001000/4600001000000000117/1.m3u8
-#EXTINF:-1 group-title="数字台" tvg-id="null" tvg-name="全纪实" tvg-logo="https://live.fanmingming.com/tv/乐游.png" t-time="333" v-w="1920" v-h="1080", 乐游频道
+#EXTINF:-1 group-title="卫视台" tvg-id="null" tvg-name="大湾区卫视" tvg-logo="https://live.fanmingming.com/tv/大湾区卫视.png" t-time="358" v-w="720" v-h="576", 大湾区卫视
+http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000002000011619/index.m3u8
+#EXTINF:-1 group-title="数字台" tvg-id="null" tvg-name="全纪实" tvg-logo="https://live.fanmingming.com/tv/乐游.png" t-time="487" v-w="1920" v-h="1080", 乐游频道
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031112/1.m3u8
-#EXTINF:-1 group-title="数字台" tvg-id="null" tvg-name="金色学堂" tvg-logo="https://live.fanmingming.com/tv/金色学堂.png" t-time="365" v-w="1920" v-h="1080", 金色学堂
+#EXTINF:-1 group-title="数字台" tvg-id="null" tvg-name="金色学堂" tvg-logo="https://live.fanmingming.com/tv/金色学堂.png" t-time="388" v-w="1920" v-h="1080", 金色学堂
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000010000026105/1.m3u8
-#EXTINF:-1 group-title="记录" tvg-id="null" tvg-name="金鹰纪实" tvg-logo="https://live.fanmingming.com/tv/金鹰纪实.png" t-time="390" v-w="1920" v-h="1080", 金鹰纪实
+#EXTINF:-1 group-title="记录" tvg-id="null" tvg-name="金鹰纪实" tvg-logo="https://live.fanmingming.com/tv/金鹰纪实.png" t-time="232" v-w="1920" v-h="1080", 金鹰纪实
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031203/1.m3u8
-#EXTINF:-1 group-title="数字台" tvg-id="null" tvg-name="茶" tvg-logo="https://live.fanmingming.com/tv/茶.png" t-time="383" v-w="1920" v-h="1080", 茶友频道
+#EXTINF:-1 group-title="数字台" tvg-id="null" tvg-name="茶" tvg-logo="https://live.fanmingming.com/tv/茶.png" t-time="386" v-w="1920" v-h="1080", 茶友频道
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031209/1.m3u8
-#EXTINF:-1 group-title="数字台" tvg-id="null" tvg-name="动漫秀场" tvg-logo="https://live.fanmingming.com/tv/动漫秀场.png" t-time="306" v-w="1920" v-h="1080", 动漫秀场
+#EXTINF:-1 group-title="数字台" tvg-id="null" tvg-name="动漫秀场" tvg-logo="https://live.fanmingming.com/tv/动漫秀场.png" t-time="312" v-w="1920" v-h="1080", 动漫秀场
 http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000011000031113/1.m3u8
-#EXTINF:-1 group-title="儿童" tvg-id="null" tvg-name="嘉佳卡通" tvg-logo="https://live.fanmingming.com/tv/嘉佳卡通.png" t-time="480" v-w="720" v-h="576", 嘉佳卡通
+#EXTINF:-1 group-title="儿童" tvg-id="null" tvg-name="嘉佳卡通" tvg-logo="https://live.fanmingming.com/tv/嘉佳卡通.png" t-time="278" v-w="720" v-h="576", 嘉佳卡通
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000002000025964/1.m3u8
 #EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="内蒙古综合" tvg-logo="https://live.fanmingming.com/tv/内蒙古新闻综合.png" t-time="124" v-w="1920" v-h="1080", 内蒙新闻
 https://livestream-bt.nmtv.cn/nmtv/2316general.m3u8?txSecret=b4373417a82ed64e52b0982a66da8df2&txTime=771E8800
@@ -1053,8 +1055,6 @@ http://[2409:8087:5e00:24::1e]:6060/200000001898/460000089800010107/1.m3u8
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000009601/1.m3u8
 #EXTINF:-1 group-title="电影" tvg-id="NewTV动作电影" tvg-name="NewTV动作电影" tvg-logo="" t-time="280" v-w="0" v-h="0", NewTV动作电影
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000004000018653/1.m3u8
-#EXTINF:-1 group-title="更新时间" tvg-id="更新时间" tvg-name="2024-11-27" tvg-logo="" t-time="223" v-w="0" v-h="0", 2024-11-27 08:02:52
-https://vd2.bdstatic.com/mda-qk63w4c03xbwmvaj/720p/h264/1730947489568846926/mda-qk63w4c03xbwmvaj.mp4?v_from_s=bdapp-resbox-hnb
 #EXTINF:-1 group-title="电视剧" tvg-id="null" tvg-name="null" tvg-logo="https://ghp.ci/raw.githubusercontent.com/suxuang/myIPTV/main/img/少年包青天.png" t-time="1354" v-w="0" v-h="0", 少年包青天
 https://lunbo.freetv.top/yy/38498680
 #EXTINF:-1 group-title="卫视台" tvg-id="重庆卫视" tvg-name="null" tvg-logo="https://live.fanmingming.com/tv/重庆卫视.png" t-time="280" v-w="0" v-h="0", 重庆卫视
@@ -1447,8 +1447,6 @@ http://[2409:8087:5e00:24::1e]:6060/000000001000/5000000004000031556/1.m3u8
 http://[2409:8087:5e00:24::10]:6060/200000001898/460000089800010002/main.m3u8
 #EXTINF:-1 group-title="体育台" tvg-id="睛彩竞技" tvg-name="睛彩竞技" tvg-logo="https://ghproxy.net/https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/assets/logo/睛彩竞技.png" t-time="323" v-w="0" v-h="0", 睛彩竞技
 http://[2409:8087:1a01:df::7005]:80/TVOD/88888888/224/3221225897/main.m3u8
-#EXTINF:-1 group-title="更新时间" tvg-id="更新时间" tvg-name="2024-12-16" tvg-logo="" t-time="225" v-w="0" v-h="0", 2024-12-16 20:52:24
-https://vd4.bdstatic.com/mda-qmfhcast4zs3v8c9/720p/h264/1734351332606021389/mda-qmfhcast4zs3v8c9.mp4?v_from_s=bdapp-resbox-suzhou
 #EXTINF:-1 group-title="央视台" tvg-id="CCTV6" tvg-name="CCTV6" tvg-logo="https://live.fanmingming.com/tv/CCTV6.png" t-time="1335" v-w="0" v-h="0", CCTV-6
 http://[2409:8087:5e00:24::1e]:6060/000000001000/1000000001000016466/1.m3u8
 #EXTINF:-1 group-title="卫视台" tvg-id="东方卫视" tvg-name="东方卫视" tvg-logo="https://live.fanmingming.com/tv/东方卫视.png" t-time="208" v-w="0" v-h="0", 东方卫视
@@ -2061,23 +2059,23 @@ http://[2409:8087:5e01:24::8]:6610/000000001000/2000000004000000011/index.m3u8?s
 http://[2409:8087:5e08:24::2]:6610/000000001000/5000000011000031207/index.m3u8?channel-id=bestzb&Contentid=5000000011000031207&livemode=1&stbId=3
 #EXTINF:-1 group-title="数字台" tvg-id="null" tvg-name="中国天气" tvg-logo="https://live.fanmingming.cn/tv/中国天气.png" t-time="231" v-w="0" v-h="0", 中国天气
 http://[2409:8087:5e08:24::2]:6610/000000001000/5000000005000031974/index.m3u8?channel-id=bestzb&Contentid=5000000005000031974&livemode=1&stbId=3
-#EXTINF:-1 group-title="上海频道" tvg-id="null" tvg-name="上海新闻综合" tvg-logo="https://live.fanmingming.cn/tv/上视新闻.png" t-time="50" v-w="0" v-h="0", 上海新闻
+#EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="上海新闻综合" tvg-logo="https://live.fanmingming.cn/tv/上视新闻.png" t-time="50" v-w="0" v-h="0", 上海新闻
 http://[2409:8087:5e01:24::8]:6610/000000001000/2000000002000000005/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000005&IASHttpSessionId=OTT19019320240419154124000281
-#EXTINF:-1 group-title="上海频道" tvg-id="null" tvg-name="上海都市" tvg-logo="https://live.fanmingming.cn/tv/上海都市.png" t-time="222" v-w="0" v-h="0", 上海都市
+#EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="上海都市" tvg-logo="https://live.fanmingming.cn/tv/上海都市.png" t-time="222" v-w="0" v-h="0", 上海都市
 http://[2409:8087:5e01:24::8]:6610/000000001000/2000000002000000012/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000012&IASHttpSessionId=OTT19019320240419154124000281
-#EXTINF:-1 group-title="上海频道" tvg-id="null" tvg-name="上海外语" tvg-logo="https://live.fanmingming.cn/tv/上海外语.png" t-time="230" v-w="0" v-h="0", 上海外语
+#EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="上海外语" tvg-logo="https://live.fanmingming.cn/tv/上海外语.png" t-time="230" v-w="0" v-h="0", 上海外语
 http://[2409:8087:5e01:24::8]:6610/000000001000/2000000002000000001/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000001&IASHttpSessionId=OTT19019320240419154124000281
-#EXTINF:-1 group-title="上海频道" tvg-id="null" tvg-name="七彩戏剧" tvg-logo="https://live.fanmingming.cn/tv/七彩戏剧.png" t-time="240" v-w="0" v-h="0", 七彩戏剧
+#EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="七彩戏剧" tvg-logo="https://live.fanmingming.cn/tv/七彩戏剧.png" t-time="240" v-w="0" v-h="0", 七彩戏剧
 http://[2409:8087:5e01:24::8]:6610/000000001000/2000000002000000010/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000010&IASHttpSessionId=OTT19019320240419154124000281
-#EXTINF:-1 group-title="上海频道" tvg-id="null" tvg-name="五星体育" tvg-logo="https://live.fanmingming.cn/tv/五星体育.png" t-time="95" v-w="0" v-h="0", 五星体育
+#EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="五星体育" tvg-logo="https://live.fanmingming.cn/tv/五星体育.png" t-time="95" v-w="0" v-h="0", 五星体育
 http://[2409:8087:5e01:24::8]:6610/000000001000/2000000002000000007/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000007&IASHttpSessionId=OTT19019320240419154124000281
-#EXTINF:-1 group-title="上海频道" tvg-id="null" tvg-name="东方影视" tvg-logo="https://live.fanmingming.cn/tv/东方影视.png" t-time="227" v-w="0" v-h="0", 东方影视
+#EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="东方影视" tvg-logo="https://live.fanmingming.cn/tv/东方影视.png" t-time="227" v-w="0" v-h="0", 东方影视
 http://[2409:8087:5e01:24::8]:6610/000000001000/2000000002000000013/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000013&IASHttpSessionId=OTT19019320240419154124000281
-#EXTINF:-1 group-title="上海频道" tvg-id="null" tvg-name="东方财经" tvg-logo="https://live.fanmingming.cn/tv/东方财经.png" t-time="228" v-w="0" v-h="0", 东方财经
+#EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="东方财经" tvg-logo="https://live.fanmingming.cn/tv/东方财经.png" t-time="228" v-w="0" v-h="0", 东方财经
 http://[2409:8087:5e01:24::8]:6610/000000001000/2000000002000000090/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000090&IASHttpSessionId=OTT19019320240419154124000281
-#EXTINF:-1 group-title="上海频道" tvg-id="null" tvg-name="法治天地" tvg-logo="https://live.fanmingming.cn/tv/法治天地.png" t-time="231" v-w="0" v-h="0", 法治天地
+#EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="法治天地" tvg-logo="https://live.fanmingming.cn/tv/法治天地.png" t-time="231" v-w="0" v-h="0", 法治天地
 http://[2409:8087:5e01:24::8]:6610/000000001000/2000000002000000014/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000014&IASHttpSessionId=OTT19019320240419154124000281
-#EXTINF:-1 group-title="上海频道" tvg-id="null" tvg-name="第一财经" tvg-logo="https://live.fanmingming.cn/tv/上海第一财经.png" t-time="49" v-w="0" v-h="0", 第一财经
+#EXTINF:-1 group-title="地方台" tvg-id="null" tvg-name="第一财经" tvg-logo="https://live.fanmingming.cn/tv/上海第一财经.png" t-time="49" v-w="0" v-h="0", 第一财经
 http://[2409:8087:5e01:24::8]:6610/000000001000/2000000002000000004/index.m3u8?stbId=3&livemode=1&HlsProfileId=&channel-id=hnbblive&Contentid=2000000002000000004&IASHttpSessionId=OTT19019320240419154124000281
 #EXTINF:-1 group-title="央视台" tvg-id="CCTV-5+" tvg-name="null" tvg-logo="https://live.fanmingming.com/tv/CCTV5.png" t-time="220" v-w="0" v-h="0", CCTV-5
 https://ldcctvwbcdcnc.v.wscdns.com/ldcctvwbcd/cdrmldcctv5plus_1_720P/playlist.m3u8?wsApp=HLS
