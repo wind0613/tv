@@ -103,6 +103,11 @@ public class InfoServiceImpl implements InfoService {
         String groupTitle = m3u8.getGroupTitle();
         String title = m3u8.getTitle();
 
+        if (applicationConfig.isFilterGroup(groupTitle)) {
+            log.info("Filter group: {}", groupTitle);
+            return;
+        }
+
         jdbcTemplate.update("INSERT INTO tvg_info (tvg_id, tvg_name, tvg_logo, group_title, title, url, status, cost_time, last_check_time) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 m3u8.getTvgId(), m3u8.getTvgName(), m3u8.getTvgLogo(), groupTitle, title, m3u8.getUrl(), m3u8.getStatus(), m3u8.getCostTime(), m3u8.getLastCheckTime());
     }

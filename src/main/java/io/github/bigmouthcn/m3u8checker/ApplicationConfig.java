@@ -20,6 +20,11 @@ public class ApplicationConfig {
     private String ffmpegPath = "ffmpeg";
 
     /**
+     * 需要过滤的频道组名称中包含的字符
+     */
+    private Set<String> filterGroupRegex = new HashSet<>();
+
+    /**
      * 频道组的映射。
      * key 是频道组名称，value 是符合正则表达式的字符串集合。
      */
@@ -40,6 +45,15 @@ public class ApplicationConfig {
      * 需要删除的频道名称中包含的字符
      */
     private Set<String> removeChars = new HashSet<>();
+
+    public boolean isFilterGroup(String groupTitle) {
+        for (String regex : filterGroupRegex) {
+            if (groupTitle.matches(regex)) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     public void updateM3u8Titles(M3u8 m3u8) {
         String groupTitle = m3u8.getGroupTitle();

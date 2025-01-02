@@ -6,6 +6,8 @@ spring:
     resources:
       static-locations: classpath:/static/
 app:
+  filter-group-regex:
+    - "更新时间"
   group-mapping:
     "[央视台]":
       - ".*央视.*"
@@ -26,6 +28,7 @@ app:
       - ".*地方.*"
       - "•地区「IPV6」"
       - "湖南台"
+      - "上海频道"
     "[体育台]":
       - ".*体育.*"
     "[电影]":
