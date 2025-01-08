@@ -27,7 +27,7 @@ import java.util.Objects;
 @Configuration
 public class RemoteFileCheckScheduler implements Scheduler {
 
-    private static final String listSource = "https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/tv/main/my-m3u-list.txt";
+    private static final String listSource = "https://gh-proxy.com/https://raw.githubusercontent.com/big-mouth-cn/tv/main/my-m3u-list.txt";
 
     private final M3uParserFactory m3uParserFactory;
     private final M3u8Checker m3u8Checker;

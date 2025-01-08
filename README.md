@@ -5,7 +5,7 @@
 https://big-mouth-cn.github.io/tv
 
 ### 订阅地址
-https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u
+https://gh-proxy.com/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u
 
 ---
 
@@ -31,7 +31,7 @@ https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.
 [原始]
 https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv.m3u
 [国内访问]
-https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv.m3u
+https://gh-proxy.com/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv.m3u
 ```
 
 :+1::smiley: **仅当前可用的频道：**
@@ -39,7 +39,7 @@ https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv.m3u
 [原始]
 https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u
 [国内访问] 
-https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u
+https://gh-proxy.com/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u
 ```
 
 ### 订阅 2
