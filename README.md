@@ -18,17 +18,17 @@
 ```
 所有频道：
 [原始]
-https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv.m3u
+https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv.m3u
 [国内访问]
-https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv.m3u
+https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv.m3u
 ```
 
 :+1::smiley: **仅当前可用的频道：**
 ```
 [原始]
-https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv-ok.m3u
+https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u
 [国内访问] 
-https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv-ok.m3u
+https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u
 ```
 
 ### 订阅 2
