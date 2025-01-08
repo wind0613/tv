@@ -1,0 +1,113 @@
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(250deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,118,142,1) 100%);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 400px;
+}
+.search-container .el-select .el-input {
+    width: 140px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+}
+.card {
+    position: relative;
+    background-color: #333;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 184px;
+    text-align: center;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(89, 89, 89, 0.35);
+    backdrop-filter: blur(17.5px);
+    -webkit-backdrop-filter: blur(17.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px;
+    -webkit-box-shadow: rgba(14, 14, 14, 0.19) 0px 6px 15px 0px;
+    -webkit-border-radius: 12px;
+    color: rgb(128, 128, 128);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+.card img {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+.group-title {
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+.status-tag,
+.cost-time{
+    font-size: 10px;
+    margin: 4px 0px;
+    padding: 0px 4px;
+    line-height: 20px;
+    color: white;
+}
+.status-tag {
+    background-color: red;
+}
+.cost-time {
+    background-color: green;
+}
+.bottom-div {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tvg-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 0.8em;
+    color: white;
+    padding: 2px 0px;
+}
+.ipv6-tag {
+    font-size: 10px;
+    color: black;
+    line-height: 20px;
+    margin: 4px 8px 4px 0px;
+    padding: 0px 4px;
+    background: rgb(216,118,4);
+    background: linear-gradient(82deg, rgba(216,118,4,1) 0%, rgba(251,244,129,1) 35%, rgba(252,222,46,1) 79%, rgba(209,100,4,1) 100%);
+}
+.video-height-tag {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    width: 30px !important;
+}
+.video-player-dialog {
+    background-color: black;
+}
