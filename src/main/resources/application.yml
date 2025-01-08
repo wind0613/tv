@@ -8,6 +8,7 @@ spring:
 app:
   filter-group-regex:
     - "更新时间"
+    - "•温馨「提示」"
   group-mapping:
     "[央视台]":
       - ".*央视.*"

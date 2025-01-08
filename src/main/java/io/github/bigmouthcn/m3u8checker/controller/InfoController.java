@@ -124,8 +124,12 @@ public class InfoController {
     public ResponseEntity<Object> updateTvGroupAndTitle() {
         List<M3u8> m3u8List = infoService.findAll();
         for (M3u8 m3u8 : m3u8List) {
-            applicationConfig.updateM3u8Titles(m3u8);
-            infoService.updateJustInfo(m3u8);
+            if (applicationConfig.isFilterGroup(m3u8.getGroupTitle())) {
+                infoService.delete(m3u8.getId());
+            } else {
+                applicationConfig.updateM3u8Titles(m3u8);
+                infoService.updateJustInfo(m3u8);
+            }
         }
         return ResponseEntity.ok(m3u8List.size());
     }
