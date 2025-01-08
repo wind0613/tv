@@ -1,3 +1,5 @@
+**:bangbang: 本工具仅供学习交流使用，使用者造成的违法违规等责任行为与作者无关。:warning:**
+
 # 快速开始
 ### 在线预览
 https://big-mouth-cn.github.io/tv
@@ -61,5 +63,3 @@ http://[服务器地址]:8080/m3u/list?justOk=1&withoutRepeat=1
 
 【在线试播】
 ![iShot_2024-12-19_11.41.32.png](docs%2FiShot_2024-12-19_11.41.32.png)
-
-**本工具仅供学习交流使用。**
