@@ -2,9 +2,181 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV</title>
+    <!-- 引入 Element UI 的 CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入自定义 CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div id="app">
+    <h1>MY IPTV</h1>
+    <div class="search-container">
+        <el-input
+                v-model="searchQuery"
+                placeholder="搜索频道"
+                @input="filterChannels"
+                class="input-with-select"
+                clearable>
+        </el-input>
+    </div>
+    <div class="container" id="channelContainer"></div>
+</div>
 
+<!-- 引入 Vue 和 Element UI 的 JS -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            dialogVisible: false,
+            videoDialogVisible: false,
+            searchQuery: '',
+            allChannels: [],
+        },
+        mounted() {
+            this.fetchData();
+        },
+        methods: {
+            async fetchData() {
+                try {
+                    const response = await fetch('https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/m3u8-checker/main/iptv-ok.m3u');
+                    const text = await response.text();
+                    const lines = text.split('\n');
+                    const result = {};
+
+                    for (let i = 0; i < lines.length; i++) {
+                        if (lines[i].startsWith('#EXTINF')) {
+                            const info = lines[i];
+                            const url = lines[i + 1];
+
+                            const groupTitleMatch = info.match(/group-title="([^"]*)"/);
+                            const tvgLogoMatch = info.match(/tvg-logo="([^"]*)"/);
+                            const tvgNameMatch = info.match(/tvg-name="([^"]*)"/);
+                            const titleMatch = info.match(/,(.*)$/);
+                            const videoHeightMatch = info.match(/v-h="([^"]*)"/);
+                            const costTimeMatch = info.match(/t-time="([^"]*)"/);
+
+                            const groupTitle = groupTitleMatch ? groupTitleMatch[1] : null;
+                            const tvgLogo = tvgLogoMatch ? tvgLogoMatch[1] : null;
+                            const tvgName = tvgNameMatch ? tvgNameMatch[1] : null;
+                            const title = titleMatch ? titleMatch[1].trim() : null;
+                            const videoHeight = videoHeightMatch ? videoHeightMatch[1] : null;
+                            const costTime = costTimeMatch ? costTimeMatch[1] : null;
+
+                            const key = `${groupTitle}-${title}`;
+                            if (!result[key]) {
+                                result[key] = {
+                                    groupTitle,
+                                    tvgLogo,
+                                    tvgName,
+                                    title,
+                                    videoHeight,
+                                    urls: [],
+                                    costTime,
+                                    count: 0
+                                };
+                            }
+                            result[key].urls.push(url);
+                            result[key].count++;
+                        }
+                    }
+
+                    this.allChannels = Object.values(result);
+                    this.filterChannels();
+                } catch (error) {
+                    console.error('Error fetching data:', error);
+                }
+            },
+            displayData(data) {
+                const container = document.getElementById('channelContainer');
+                container.innerHTML = ''; // 清空旧数据
+
+                const groupedData = data.reduce((acc, item) => {
+                    if (!acc[item.groupTitle]) {
+                        acc[item.groupTitle] = [];
+                    }
+                    acc[item.groupTitle].push(item);
+                    return acc;
+                }, {});
+
+                for (const group in groupedData) {
+                    const groupTitle = document.createElement('div');
+                    groupTitle.className = 'group-title';
+                    groupTitle.textContent = group;
+                    container.appendChild(groupTitle);
+
+                    groupedData[group].forEach(item => {
+                        const card = document.createElement('div');
+                        card.className = 'card';
+                        card.addEventListener('click', () => this.openDialog(item));
+
+                        const logoUrl = item.tvgLogo || `https://live.fanmingming.com/tv/${encodeURIComponent(item.tvgName)}.png`;
+                        const logo = document.createElement('img');
+                        logo.src = logoUrl;
+                        logo.alt = item.title;
+                        logo.onload = () => {
+                            card.appendChild(logo);
+                        }
+
+                        const tvgName = document.createElement('div');
+                        tvgName.className = 'tvg-name';
+                        tvgName.textContent = item.title;
+                        card.appendChild(tvgName);
+
+                        if (item.videoHeight >= 1080) {
+                            const videoHeightTag = document.createElement('img');
+                            videoHeightTag.className = 'video-height-tag';
+                            videoHeightTag.src = `images/${item.videoHeight}p.png`;
+                            card.appendChild(videoHeightTag);
+                        }
+
+                        // 添加底部容器
+                        const bottom = document.createElement('div');
+                        bottom.className = 'bottom-div';
+
+                        // 添加IPv6标识
+                        if (this.isIPv6(item.urls[0])) {
+                            const ipv6Tag = document.createElement('div');
+                            ipv6Tag.className = 'ipv6-tag';
+                            ipv6Tag.textContent = 'IPv6';
+                            bottom.appendChild(ipv6Tag);
+                        }
+
+                        // 添加状态
+                        let statusTag = document.createElement('div');
+                        statusTag.className = 'cost-time';
+                        statusTag.textContent = item.costTime + " ms";
+                        bottom.appendChild(statusTag);
+
+                        // 添加线路数量
+                        const lineCountTag = document.createElement('div');
+                        lineCountTag.className = 'line-count-tag';
+                        lineCountTag.textContent = `${item.count} 线路`;
+                        card.appendChild(lineCountTag);
+
+                        card.appendChild(bottom);
+                        container.appendChild(card);
+                    });
+                }
+            },
+            filterChannels() {
+                const filteredData = this.allChannels.filter(item =>
+                    item.title.toLowerCase().includes(this.searchQuery.toLowerCase())
+                );
+                this.displayData(filteredData);
+            },
+            isIPv6(url) {
+                return !/^(http|https):\/\/(\d{1,3}\.){3}\d{1,3}/.test(url);
+            },
+            openDialog(item) {
+                console.log(item);
+            },
+        }
+    });
+</script>
 </body>
 </html>
