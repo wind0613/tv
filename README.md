@@ -1,3 +1,12 @@
+# 快速开始
+### 在线预览
+https://big-mouth-cn.github.io/tv
+
+### 订阅地址
+https://ghgo.xyz/https://raw.githubusercontent.com/big-mouth-cn/tv/main/iptv-ok.m3u
+
+---
+
 # 这是什么?
 这是一款能够自动抓取远程直播源列表（m3u）的工具。它可以对抓取到的频道列表进行分析，测试每个频道的可用性与延迟，解析出视频和音频流信息，并将这些数据存储到本地数据库中。最终，这款工具会根据数据库中的频道信息整理出一个优化后的直播源列表，方便在直播软件中直接播放。
 
